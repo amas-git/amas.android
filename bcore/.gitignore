@@ -1,0 +1,9 @@
+.classpath
+.project
+bin/
+gen/
+proguard/
+*.DS_Store
+.settings/
+perform/
+

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:netqin="http://schemas.android.com/apk/res/com.netqin.mobileguard">
+<PreferenceScreen android:key="key_test_pg" android:title="工程测试">
+</PreferenceScreen>
+</PreferenceScreen>
