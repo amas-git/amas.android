@@ -1,10 +1,10 @@
 ==========
 bcore
 ==========
-bcore is a simple event based framework.
+bcore is a simple event based framework for network client development.
 
-bacic features:
+features:
+ * event driven
  * event queue
  * task queue
  * transaction support
-
