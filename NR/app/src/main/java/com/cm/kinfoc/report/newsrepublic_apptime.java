@@ -5,7 +5,6 @@ import com.cm.kinfoc.BaseTracer;
 
 public class newsrepublic_apptime extends BaseTracer {
 
-
     public newsrepublic_apptime() {
         super("newsrepublic_apptime");
     }

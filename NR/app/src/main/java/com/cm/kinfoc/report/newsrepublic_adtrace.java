@@ -10,7 +10,6 @@ public class newsrepublic_adtrace extends BaseTracer {
         super("newsrepublic_adtrace");
     }
 
-
     @Override
     public void reset() {
         status(0);

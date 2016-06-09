@@ -7,8 +7,6 @@ import com.cm.kinfoc.BaseTracer;
 
 public class newsrepublic_readnum extends BaseTracer {
 
-
-
     public newsrepublic_readnum() {
         super("newsrepublic_readnum");
     }
