@@ -1,0 +1,43 @@
+newsindia_public:2 uuid:binary xaid:string ver:int mcc:short mnc:short cl:string cn:int cn2:string prodid:int root:byte capi:byte brand:string model:string serial:string uptime:int mode:byte
+newsindia_act1:101 uptime2:int listid:int loadtype:byte
+newsindia_listaction:102 uptime2:int listid:int action:byte
+newsindia_act2:103 uptime2:int source:byte
+newsindia_articletime:108 uptime2:int newsid:string listid:int complete:short share:byte source:byte duration:int network:byte
+newsindia_bookmark:110 uptime2:int newsid:string listid:int clicktime:int size:int fail:byte
+newsindia_offline:111 uptime2:int size:int num:short clicknum:int fail:byte network:byte
+newsindia_actoffline:112 uptime2:int number:short
+newsindia_actbookmark:113 uptime2:int num:int
+newsindia_textonly:114 uptime2:int action:byte textonly:byte network:byte
+newsindia_clean:115 uptime2:int size:int click:byte
+newsindia_act3:117 uptime2:int
+newsindia_readnum:134 uptime2:int readnum:short view:short source:byte
+newsindia_notification:153 uptime2:int newsid:string action:byte clicktime:int showtype:byte pushid:string imgview:byte pushtype:byte
+newsindia_changestyle:125 uptime2:int feature:byte view:byte click:byte
+newsindia_actcn:127 uptime2:int refer:int
+newsindia_apifailed:132 uptime2:int url:string message:string time1:int net:string
+newsindia_apiperformance:131 uptime2:int url:string net:string time1:int
+newsindia_dbperformance:130 uptime2:int function1:string size:int col_len:byte time1:int
+newsindia_listtime:128 uptime2:int duration:ient listid:int listnum:int refresh:short loadnum:short bookmark:short
+newsindia_interest:136 uptime2:int ifclick:byte clicknum:int interesttype:int action:byte
+newsindia_img_trace:144 uptime2:int url:string httpcode:byte rtime:int dsize:int
+newsindia_apptime:175 uptime2:int duration:int network:byte textonly:byte feature:byte source1:byte
+newsindia_newsaction:141 uptime2:int listid:int newsid:string pos:short click:byte source:byte textonly:byte viewtime:int feature:byte ctype:int
+newsindia_actdetail:142 uptime2:int source:byte
+newsindia_language:147 uptime2:int action:byte
+newsindia_gcm:150 uptime2:int64 successful:byte
+newsindia_net_tracer:151 uptime2:int api_name:string net:string code:byte message:string
+newsindia_detailaction:173 uptime2:int action:byte newsid:string ads:byte picswipe:byte pkgname:string source:string
+newsindia_sharelink:154 uptime2:int pos:string atype:byte
+newsindia_adtrace:161 uptime2:int status:byte network:string pos:byte
+newsindia_loadtime:160 uptime2:int listime:int loadingtime:int network:byte textonly:byte ifweb:byte
+newsindia_cricketlive:164 uptime2:int action:byte
+newsindia_startview:163 uptime2:int ctype:string ifclick:byte
+newsindia_fblikes:165 uptime2:int action:byte
+newsindia_actbg:166 uptime2:int installtype:string
+newsindia_topic:168 uptime2:int topic:string viewtype:byte action:byte
+newsindia_login:170 uptime2:int stage:byte ifsuccessful:byte page:byte
+newsindia_voice:171 uptime2:int pubid:string action:byte
+newsindia_net:174 uptime2:int nettype:string creattime:string
+newsindia_newslist_dislike:178 scenario:string ctype:byte source:string categories:string keywords:string otherwords:string contentid:string
+newsindia_photostory:176 uptime2:int action:byte
+newsindia_city:180 uptime2:int action:byte citya:int citym:int

@@ -1,0 +1,6 @@
+[common]
+product=90
+validity=7
+server0=https://helpnewsindia0.ksmobile.com/c/
+server1=https://helpnewsindia1.ksmobile.com/c/
+serverhttps=https://helpnewsindia1.ksmobile.com/c/

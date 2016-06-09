@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#181818"
+    android:orientation="vertical">
+
+    <!--<com.cmcm.terminal.ConsoleTextView-->
+    <!--android:id="@+id/message"-->
+    <!--android:textSize="11sp"-->
+    <!--android:typeface="monospace"-->
+    <!--android:textColor="#FFF"-->
+    <!--android:ellipsize="start"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"/>-->
+
+    <RelativeLayout
+        android:id="@+id/panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#181818"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="SEND MESSAGE"
+        />
+    </RelativeLayout>
+
+    <ListView
+        android:layout_above="@id/panel"
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#00000000"
+        android:dividerHeight="0dp"
+        android:fastScrollEnabled="true"
+        android:scrollbarStyle="insideInset" />
+</RelativeLayout>
