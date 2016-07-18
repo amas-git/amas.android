@@ -1,9 +1,10 @@
-package s.a.m.a.console.ui;
+package a.m.a.s.apidemos.ui;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import s.a.m.a.console.R;
+import s.a.m.a.apidemos.R;
+
 
 public class MainActivity extends AppCompatActivity {
 

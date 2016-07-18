@@ -1,4 +1,4 @@
-package s.a.m.a.onevent;
+package a.m.a.s.onevent;
 
 import android.os.Message;
 

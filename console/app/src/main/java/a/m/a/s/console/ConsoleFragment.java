@@ -1,4 +1,4 @@
-package s.a.m.a.console;
+package a.m.a.s.console;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -9,6 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ListView;
+
+import s.a.m.a.apidemos.BuildConfig;
+import s.a.m.a.apidemos.R;
 
 
 public class ConsoleFragment extends Fragment implements Console.MessageListener {
@@ -79,7 +82,7 @@ public class ConsoleFragment extends Fragment implements Console.MessageListener
             activity.runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
-                    adapter.addItem(message, getUserVisibleHint());
+                    adapter.addItem(message, _getUserVisibleHint());
                     scrollToLast();
                 }
             });
@@ -87,8 +90,12 @@ public class ConsoleFragment extends Fragment implements Console.MessageListener
     }
 
     protected void scrollToLast() {
-        if(getUserVisibleHint() && mListView != null) {
+        if(_getUserVisibleHint() && mListView != null) {
             mListView.setSelection(adapter.getCount());
         }
+    }
+
+    public boolean _getUserVisibleHint() {
+        return getUserVisibleHint();
     }
 }

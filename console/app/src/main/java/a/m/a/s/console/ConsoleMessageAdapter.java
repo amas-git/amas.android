@@ -1,4 +1,4 @@
-package s.a.m.a.console;
+package a.m.a.s.console;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -7,7 +7,8 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import s.a.m.a.cs.CircularBuffer;
+import a.m.a.s.cs.CircularBuffer;
+import s.a.m.a.apidemos.R;
 
 /**
  * Created by amas on 3/30/16.

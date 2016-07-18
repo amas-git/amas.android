@@ -1,4 +1,4 @@
-package s.a.m.a.cs;
+package a.m.a.s.cs;
 
 /**
  * Created by amas on 4/12/16.

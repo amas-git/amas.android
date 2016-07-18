@@ -1,0 +1,12 @@
+defaultTasks 'taskB'
+
+
+task taskA << {
+    println "i'm task A"
+}
+
+task taskB << {
+    println "i'm task B, and I depend on " + taskA.name
+}
+
+taskB.dependsOn taskA

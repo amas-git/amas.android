@@ -1,4 +1,4 @@
-package s.a.m.a.console;
+package a.m.a.s.console;
 
 
 /**

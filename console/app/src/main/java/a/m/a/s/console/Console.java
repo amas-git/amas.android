@@ -1,10 +1,11 @@
-package s.a.m.a.console;
+package a.m.a.s.console;
 
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Message;
 
-import s.a.m.a.cs.CircularBuffer;
+import a.m.a.s.cs.CircularBuffer;
+
 
 /**
  * Created by amas on 1/16/16.
