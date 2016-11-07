@@ -1,1 +1,1 @@
-include ':app', ':ui_widget'
+include ':app', ':ui_widget', ':libevent', ':liblog'

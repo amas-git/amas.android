@@ -10,6 +10,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/libevent" />
+            <option value="$PROJECT_DIR$/liblog" />
             <option value="$PROJECT_DIR$/ui_widget" />
           </set>
         </option>
@@ -17,6 +19,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/libevent" />
+            <option value="$PROJECT_DIR$/liblog" />
             <option value="$PROJECT_DIR$/ui_widget" />
           </set>
         </option>
