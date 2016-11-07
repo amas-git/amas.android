@@ -16,14 +16,14 @@ import s.a.m.a.apidemos.R;
 public class ConsoleMessageAdapter extends BaseAdapter {
     private Context mContext = null;
     private LayoutInflater mInflater = null;
-    CircularBuffer<Console.ConsoleMessage> messages = new CircularBuffer<>(0);
+    CircularBuffer<ConsoleMessage> messages = new CircularBuffer<>(0);
 
     public ConsoleMessageAdapter(Context context) {
         mContext = context;
         mInflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
-    public ConsoleMessageAdapter(Context context, CircularBuffer<Console.ConsoleMessage> messages) {
+    public ConsoleMessageAdapter(Context context, CircularBuffer<ConsoleMessage> messages) {
         mContext = context;
         mInflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         this.messages = messages;
@@ -49,7 +49,7 @@ public class ConsoleMessageAdapter extends BaseAdapter {
      * @param message 消息
      * @param sync 是否刷新界面
      */
-    public void addItem(Console.ConsoleMessage message, boolean sync) {
+    public void addItem(ConsoleMessage message, boolean sync) {
         messages.put(message);
         if(sync) {
             notifyDataSetChanged();
@@ -70,7 +70,7 @@ public class ConsoleMessageAdapter extends BaseAdapter {
             holder = (ViewHolder) convertView.getTag();
         }
 
-        final Console.ConsoleMessage item = (Console.ConsoleMessage) getItem(position);
+        final ConsoleMessage item = (ConsoleMessage) getItem(position);
         holder.message.setText(item.message);
         //holder.message.setText();
         return convertView;

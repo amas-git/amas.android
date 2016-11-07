@@ -5,15 +5,6 @@
     android:background="#181818"
     android:orientation="vertical">
 
-    <!--<com.cmcm.terminal.ConsoleTextView-->
-    <!--android:id="@+id/message"-->
-    <!--android:textSize="11sp"-->
-    <!--android:typeface="monospace"-->
-    <!--android:textColor="#FFF"-->
-    <!--android:ellipsize="start"-->
-    <!--android:layout_width="fill_parent"-->
-    <!--android:layout_height="wrap_content"/>-->
-
     <RelativeLayout
         android:id="@+id/panel"
         android:layout_width="match_parent"
@@ -21,12 +12,21 @@
         android:layout_alignParentBottom="true"
         android:background="#181818"
         android:orientation="vertical">
-
+        <EditText
+            android:id="@+id/et_command"
+            android:textColor="#FFF"
+            android:layout_width="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="60dp"
+            android:layout_height="wrap_content" />
         <Button
             android:id="@+id/btn_send"
-            android:layout_width="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="50dp"
             android:layout_height="50dp"
-            android:text="SEND MESSAGE"
+            android:text="GO"
         />
     </RelativeLayout>
 

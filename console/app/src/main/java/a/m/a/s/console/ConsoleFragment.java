@@ -1,27 +1,34 @@
 package a.m.a.s.console;
 
 import android.app.Activity;
-import android.app.Fragment;
 import android.content.Context;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
 
-import s.a.m.a.apidemos.BuildConfig;
 import s.a.m.a.apidemos.R;
 
 
 public class ConsoleFragment extends Fragment implements Console.MessageListener {
-    public static ConsoleFragment newInstance() {
-        return new ConsoleFragment();
+
+
+    public static ConsoleFragment newInstance(Console console) {
+        ConsoleFragment c = new ConsoleFragment();
+        c.console = console;
+        c.console.setMessageListener(c);
+        return c;
     }
 
     ListView mListView = null;
     ConsoleMessageAdapter adapter = null;
     Button btn_send = null;
+    EditText et_command = null;
+    Console console = null;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -33,27 +40,46 @@ public class ConsoleFragment extends Fragment implements Console.MessageListener
             int i = 0;
             @Override
             public void onClick(View v) {
-                Console.getInstance().write(""+(i++));
+                onClickEnter();
             }
         });
+
+        et_command = (EditText)root.findViewById(R.id.et_command);
         return root;
+    }
+
+    private void onClickEnter() {
+        String cmdline = et_command.getText().toString();
+        if(console != null) {
+            console.exec(cmdline);
+        }
+        et_command.setText("");
     }
 
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        adapter = new ConsoleMessageAdapter(context, Console.getInstance().getAllMessages());
-        Console.getInstance().setMessageListener(this);
+        if(console != null) {
+            adapter = new ConsoleMessageAdapter(context, console.getAllMessages());
+            console.setMessageListener(this);
+            console.enabled();
+        }
     }
 
     @Override
     public void onDetach() {
+        if(console != null) {
+            console.disable();
+        }
         super.onDetach();
     }
 
     @Override
     public void onDestroy() {
-        Console.getInstance().removeMessageListener(this);
+        if(console != null) {
+            console.removeMessageListener(this);
+            console.cleanup();
+        }
         super.onDestroy();
     }
 
@@ -75,7 +101,7 @@ public class ConsoleFragment extends Fragment implements Console.MessageListener
     }
 
     @Override
-    public void onNewMessage(final Console.ConsoleMessage message) {
+    public void onNewMessage(final ConsoleMessage message) {
         // 非主线程
         Activity activity = getActivity();
         if(activity != null) {
