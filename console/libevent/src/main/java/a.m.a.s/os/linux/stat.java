@@ -6,7 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import a.m.a.s.log.S;
+import a.m.a.s.L;
+
 
 /**
 (1) pid  %d
@@ -323,7 +324,7 @@ public class stat {
 				s.close();
 			}
 		}
-		System.out.println(S.join("\n",S.ADD_LABEL("%5s  %s",names,xs)));
+		System.out.println(L.join("\n",L.ADD_LABEL("%5s  %s",names,xs)));
 		return null;
 	}
 }
