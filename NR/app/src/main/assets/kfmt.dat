@@ -1,9 +1,0 @@
-newsrepublic_public:1 uuid:binary xaid:string ver:int mcc:short mnc:short cl:string cn:int cn2:string prodid:int root:byte capi:byte brand:string model:string serial:string uptime:int mode:byte
-newsrepublic_act1:101 uptime2:int listid:int loadtype:byte
-newsrepublic_act3:102 uptime2:int
-newsrepublic_actbg:103 uptime2:int installtype:string ram:int rom:int
-newsrepublic_adtrace:104 uptime2:int status:byte network:string pos:byte
-newsrepublic_apptime:105 uptime2:int duration:int network:byte textonly:byte feature:byte source1:byte ifoffline:byte
-newsrepublic_readnum:106 uptime2:int readnum:short view:short source:byte ifoffline:byte
-newsrepublic_act2:107 uptime2:int
-newsrepublic_push:108 uptime2:int newsid:int pushid:int action:byte showtype:byte
