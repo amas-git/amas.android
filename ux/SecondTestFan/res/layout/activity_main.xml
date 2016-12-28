@@ -1,0 +1,21 @@
+<com.example.secondtestfan.ColorBackLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/color_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff000000" >
+    
+    <com.example.secondtestfan.MainCircleFan
+        android:layout_width="fill_parent"
+        android:id="@+id/fan"
+        android:visibility="gone"
+        android:layout_height="300dp"/>
+    
+    <com.example.secondtestfan.TestCircle
+        android:layout_width="90dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/icon"
+        android:layout_height="90dp"/>
+
+
+</com.example.secondtestfan.ColorBackLayout>

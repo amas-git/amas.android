@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="s.a.m.a.holdon">
+
+    <application android:name=".GApplication" android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name">
+        <activity android:name=".ui.MainPageActivity" android:theme="@style/android:Theme.Light.NoTitleBar.Fullscreen">
+            android:label="@string/app_name"&gt;
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.NewTaskActivity" android:theme="@style/android:Theme.Light.NoTitleBar.Fullscreen" android:label="@string/app_name">
+        </activity>
+        <activity android:name=".editor.ListEditor" android:theme="@style/android:Theme.Light.NoTitleBar.Fullscreen" android:label="@string/app_name"/>
+        <activity android:name=".editor.TextEditor" android:configChanges="orientation|keyboardHidden|locale" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible|adjustPan" android:theme="@style/android:Theme.Light.NoTitleBar.Fullscreen" android:label="@string/app_name"/>
+
+        <receiver android:name="s.a.m.a.sched.sched.android.OnAlarmReceiver">
+        </receiver>
+        <service android:name="s.a.m.a.service.LocalService"/>
+    <activity android:name="s.a.m.a.holdon.ui.ChangeTimeActivity"/></application>
+
+</manifest>

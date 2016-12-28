@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/base3"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/base3"
+        android:id="@+id/title_panel"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:textColor="@color/base03"
+            android:text="大宇君，要坚持一个月不洗澡"
+            android:textSize="@dimen/textSize1" />
+        <TextView
+            android:layout_alignParentRight="true"
+            android:id="@+id/ctime"
+            android:layout_width="72dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:textColor="@color/base0"
+            android:text="2月15日"
+            android:textSize="@dimen/textSize0" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/task_progress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_panel">
+
+        <TextView
+            android:layout_below="@+id/details"
+            android:id="@+id/details"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="已经坚持3天"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/textSize1" />
+
+        <s.a.m.a.holdon.ui.widget.HTaskProgress
+            android:layout_below="@id/details"
+            android:id="@+id/htprogress"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/button1"
+            android:layout_below="@id/htprogress"
+            android:layout_centerVertical="true"
+            android:text="向前一步"
+            android:background="@drawable/button_green"
+            android:id="@+id/checkin" />
+    </RelativeLayout>
+</RelativeLayout>

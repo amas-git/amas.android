@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base0"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/panel_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/base3">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="@dimen/itemSize2"
+            android:text="不看电视"
+            android:textSize="@dimen/textSize1"
+            android:id="@+id/title" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="1dp"
+        android:layout_below="@id/panel_1"
+        android:id="@+id/panel_2"
+        android:minHeight="72dp"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/base3">
+        <Button
+            android:layout_margin="@dimen/circle_gap"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:textColor="@color/base3"
+            android:minHeight="@dimen/itemSize2"
+            android:text="3"
+            android:textSize="@dimen/textSize0"
+            android:background="@drawable/circle_button"
+            android:id="@+id/sched3" />
+        <Button
+            android:layout_margin="@dimen/circle_gap"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:textColor="@color/base3"
+            android:minHeight="@dimen/itemSize2"
+            android:text="7"
+            android:textSize="@dimen/textSize0"
+            android:background="@drawable/circle_button"
+            android:id="@+id/sched7" />
+        <Button
+            android:layout_margin="@dimen/circle_gap"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:textColor="@color/base3"
+            android:gravity="center"
+            android:minHeight="@dimen/itemSize2"
+            android:text="21"
+            android:textSize="@dimen/textSize0"
+            android:background="@drawable/circle_button"
+            android:id="@+id/sched21" />
+        <Button
+            android:layout_margin="@dimen/circle_gap"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:textColor="@color/base3"
+            android:minHeight="@dimen/itemSize2"
+            android:text="30"
+            android:textSize="@dimen/textSize0"
+            android:background="@drawable/circle_button"
+            android:id="@+id/sched30" />
+        <Button
+            android:layout_margin="@dimen/circle_gap"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:textColor="@color/base3"
+            android:minHeight="@dimen/itemSize2"
+            android:text="自定义"
+            android:textSize="@dimen/textSize0"
+            android:background="@drawable/circle_button"
+            android:id="@+id/sched_any" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_marginTop="1dp"
+        android:visibility="gone"
+        android:layout_below="@id/panel_2"
+        android:id="@+id/panel_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/base3">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="@dimen/itemSize2"
+            android:text="坚持一个月"
+            android:textSize="@dimen/textSize1"
+            android:id="@+id/target" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="1dp"
+        android:visibility="gone"
+        android:layout_below="@id/panel_3"
+        android:id="@+id/panel_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/base3">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="@dimen/itemSize2"
+            android:text="早8点"
+            android:textSize="@dimen/textSize1" />
+
+    </RelativeLayout>
+    <Button
+        android:layout_marginTop="1dp"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/buttonHeight"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_green"
+        android:text="@string/button_newtask"
+        android:textColor="@color/base3"
+        android:textSize="@dimen/textSize1"
+        android:id="@+id/btn_new_task" />
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="0dp"
+    android:layout_margin="0dp"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:background="@color/base03"
+        android:paddingRight="@dimen/title_padding_right"
+        android:layout_height="@dimen/title_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/title_bar_title"
+            android:textColor="@color/base3"
+            android:layout_marginLeft="10dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="这是标题"
+            android:layout_height="fill_parent" />
+
+        <Button
+            android:id="@+id/title_bar_right_button"
+            android:text="确定"
+            android:visibility="gone"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:background="@drawable/button_green"
+            android:layout_alignParentRight="true"
+            android:onClick="onClick_title_button_height"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/title_button_height" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_below="@id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height">
+
+    </RelativeLayout>
+</RelativeLayout>

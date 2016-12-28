@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEE">
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="fill_parent"
+        android:textColor="@color/blue"
+        android:layout_centerInParent="true"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:gravity="center"
+        android:text="10:00"
+        android:layout_height="80dp" />
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="#EEE"
+        android:orientation="horizontal">
+
+        <Button
+            android:text="-"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textColor="@color/base3"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:onClick="onDecDay"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="+"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textColor="@color/base3"
+            android:textStyle="bold"
+            android:onClick="onIncDay"
+            android:textSize="24dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

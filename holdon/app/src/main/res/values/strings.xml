@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">坚持不懈</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="button_newtask">立刻开始</string>
+    <string name="promote_edit_title">新建一个任务</string>
+    <string name="hint_edit_title">随便说点什么把</string>
+    <string name="ok">确认</string>
+
+
+    <array name="sched_name">
+        <item>每天</item>
+        <item>每周</item>
+        <item>每月</item>
+    </array>
+    <array name="sched_expr">
+        <item>0 0 */1 * *</item> <!-- 每天一次 -->
+        <item>0 0 */1 * *</item> <!-- 每天周一次 -->
+        <item>0 0 */1 * *</item> <!-- 每月一次 -->
+    </array>
+
+
+    <array name="target_name">
+        <item>三天</item>
+        <item>一周</item>
+        <item>二周</item>
+        <item>三周</item>
+        <item>一个月</item>
+        <item>二个月</item>
+        <item>三个月</item>
+    </array>
+
+    <array name="target_value">
+        <item>3d</item>
+        <item>1w</item>
+        <item>2w</item>
+        <item>3w</item>
+        <item>1m</item>
+        <item>2m</item>
+        <item>3m</item>
+    </array>
+</resources>

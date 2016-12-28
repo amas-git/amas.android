@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/float_image"
+        android:layout_width="wrap_content"
+        android:visibility="invisible"
+        android:layout_height="wrap_content"
+        android:background="@drawable/floatingwindown_small_left_normal" >
+
+        <TextView
+            android:id="@+id/tv_float_mem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp"
+            android:text="12%"
+            android:textColor="#00ff00"
+            android:textSize="9sp"
+            android:visibility="visible" />
+        
+        <TextView
+            android:id="@+id/tv_float_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_float_mem"
+            android:text="12%"
+            android:textColor="#0000ff"
+            android:textSize="9sp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</RelativeLayout>

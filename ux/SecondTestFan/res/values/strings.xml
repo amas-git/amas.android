@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SecondTestFan</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="main_goal_unit">分</string>
+    <string name="main_goal_need_optimization">需要优化</string>
+    <string name="main_goal_just_optimization">一键优化</string>
+    <string name="main_goal_calculating">计算中</string>
+    <string name="main_goal_optimaizating">优化中</string>
+
+</resources>

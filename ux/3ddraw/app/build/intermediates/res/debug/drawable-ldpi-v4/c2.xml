@@ -1,0 +1,7 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="ring">
+    <size
+        android:width="100dp"
+        android:height="100dp" />
+    <solid android:color="#ff859900" />
+</shape><!-- From: file:/data/sandbox/amas/3ddraw/app/src/main/res/drawable-ldpi/c2.xml -->

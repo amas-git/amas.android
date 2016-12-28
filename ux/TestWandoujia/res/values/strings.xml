@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TestWandoujia</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="wandou_regist">注册</string>
+    <string name="wandou_game_group">游戏小组</string>
+    <string name="wandou_app">应用</string>
+    <string name="wandou_game">游戏</string>
+    <string name="wandou_video">视频</string>
+    <string name="wandou_book">电子书</string>
+    <string name="wandou_more">更多</string>
+    
+    <string name="wandou_search">搜索进入全新娱乐世界</string>
+
+</resources>
