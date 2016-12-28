@@ -6,6 +6,7 @@ import a.m.a.s.os.linux.proc;
 import a.m.a.s.os.linux.proc_pid_stat;
 import a.m.a.s.os.linux.vnode;
 import a.m.a.s.os.linux.vnode.rules;
+import org.apache.http.entity.StringEntity;
 
 
 class Job implements Runnable {
@@ -29,7 +30,16 @@ class Job implements Runnable {
 
 
 
+
+
 public class Main {
+
+	public static String trimBody(final String body, int limit) {
+		StringBuilder sb = new StringBuilder();
+		return null;
+	}
+
+
 	public static void main(String[] args) {
 		//Disspatcher.runTest();
 		//CountTask.runTest();
@@ -48,7 +58,7 @@ public class Main {
 		//SmartEventDispatcher.runTest(1, 100);
 		proc_pid_stat ps = new proc_pid_stat();
 		
-		System.out.println(ps.update());
+//		System.out.println(ps.update());
 //		SimpleDateFormat time_ctrl = new SimpleDateFormat("yyyyMMdd:HH");
 //		
 //		long now = System.currentTimeMillis();

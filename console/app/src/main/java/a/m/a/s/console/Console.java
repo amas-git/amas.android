@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
+import a.m.a.s.apidemos.ui.BaseTracer;
 import a.m.a.s.cs.CircularBuffer;
 
 
@@ -244,12 +245,40 @@ public class Console {
         commands.put(command.name, command);
     }
 
+    static int round = 1000;
     static {
         addCommand(new ConsoleCommand("pid") {
             @Override
             public ConsoleMessage exec(ArrayList<String> argv) {
                 String result = ""+android.os.Process.myPid();
                 return ConsoleMessage.create(result);
+            }
+        });
+
+
+
+        addCommand(new ConsoleCommand("q") {
+            @Override
+            public ConsoleMessage exec(ArrayList<String> argv) {
+                long t0 = System.nanoTime();
+
+                BaseTracer b = new BaseTracer(30);
+                for(int i=0; i<round; ++i) {
+                    b.toInfocString();
+                }
+                return ConsoleMessage.create(""+(System.nanoTime()-t0));
+            }
+        });
+
+        addCommand(new ConsoleCommand("w") {
+            @Override
+            public ConsoleMessage exec(ArrayList<String> argv) {
+                long t0 = System.nanoTime();
+                BaseTracer b = new BaseTracer(30);
+                for(int i=0; i<round; ++i) {
+                    b.toInfocString2();
+                }
+                return ConsoleMessage.create(""+(System.nanoTime()-t0));
             }
         });
     }

@@ -8,6 +8,7 @@ import android.os.Bundle;
 
 import a.m.a.s.console.Console;
 import a.m.a.s.console.ConsoleFragment;
+import a.m.a.s.sched.android.SchedService;
 import s.a.m.a.apidemos.R;
 
 
@@ -25,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
         context.startActivity(getLaunchIntent(context));
     }
 
+
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +41,9 @@ public class MainActivity extends AppCompatActivity {
 //        adapter.addFragment(PageFragment2.newInstance());
 //        adapter.addFragment(PageFragment3.newInstance());
         mViewPager.setAdapter(adapter);
+        System.out.println("OK");
+        SchedService.start(this, 0);
+
     }
 
 }

@@ -2,7 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="s.a.m.a.apidemos">
 
-    <uses-sdk android:minSdkVersion="15"  android:targetSdkVersion="15"/>
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="15" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,10 +14,12 @@
         <activity android:name="a.m.a.s.apidemos.ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <receiver android:name="a.m.a.s.sched.android.OnAlarmReceiver"></receiver>
+        <service android:name="a.m.a.s.sched.android.SchedService"/>
     </application>
 
 </manifest>

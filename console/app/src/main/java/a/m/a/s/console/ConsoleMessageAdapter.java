@@ -23,7 +23,7 @@ public class ConsoleMessageAdapter extends BaseAdapter {
         mInflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
-    public ConsoleMessageAdapter(Context context, CircularBuffer<ConsoleMessage> messages) {
+    public ConsoleMessageAdapter(Context context, CircularBuffer< ConsoleMessage> messages) {
         mContext = context;
         mInflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         this.messages = messages;
