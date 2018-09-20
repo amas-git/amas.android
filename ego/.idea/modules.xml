@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ego.iml" filepath="$PROJECT_DIR$/ego.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_cn/lib_cn.iml" filepath="$PROJECT_DIR$/lib_cn/lib_cn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libcore/libcore.iml" filepath="$PROJECT_DIR$/libcore/libcore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libjava/libjava.iml" filepath="$PROJECT_DIR$/libjava/libjava.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,90 @@
+// the same meaning
+project.defaultTasks 'dump'
+defaultTasks 'dump'
+
+def rootDir='ROOT_DIR'
+def hostName
+task hello << {
+    println "HELLO!!!"
+}
+
+task a(description:"TASK A") << { println "A" }
+task b << { println "B" }
+task c << { println "C" }
+b.description "TASK B"
+c.description "TASK C"
+
+task d(dependsOn: a)     << { println "D" }
+task e(dependsOn: [a,b]) << { println "E" }
+task f << { println "F" }
+f.description "A TASK DEPENDSON e"
+f.dependsOn c,e 
+
+
+def num = 12
+task g << { 
+    if(num % 2 == 0) {
+        println "G" 
+    }
+}
+
+task gg << {
+    println "GG"
+}
+gg.onlyIf { num % 2 == 0 }
+
+task ggg {
+    onlyIf { num % 2 == 0  }
+    doLast {
+        println "GGG"
+    }
+}
+
+task dump << {
+    println this
+    println this.name
+    println name           // name of closure which is 'dump'
+    println dump
+    println dump.name
+
+
+//#BASIC OF PROJECT OBJECT
+    println project.name
+    println project.description
+    println project.buildDir
+    println project.version
+    println project.status
+    project.setBuildDir "hello_project"
+    println project.buildDir
+    println project.rootDir
+    println rootDir + " " + project.rootDir
+    println getParent()
+    println buildFile
+    println buildscript
+    println childProjects
+
+    // # USE setProperty to change the field value
+    project.setProperty("version", 1)
+    println project.version
+    //project.setProperty("hostName", "www.ego.com") // THIS WILL CASE ERROR
+    //println project.hostName
+
+    project.ext.v1 = 'v1'
+    project.ext.v2 = 'v2'
+    println project.ext.v1
+    println project.ext.v2
+    println project.ext
+    
+
+    // TASK RELATED
+    println getAllTasks(true) // true means get task recursive
+    println getTasksByName("hello",true)
+
+    hello.description = 'THIS IS HELLO'
+    println hello.description
+
+    // hello.setEnabled false 任务一但开始执行就不能setEnabled  false
+    tasks.hello.execute()
+    tasks.hello.execute()
+}
+
