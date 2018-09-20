@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	size="200x200">
+	<arc-stroke
+		id="1"
+		static="true"
+		margin="20"
+		startAngle="90"
+		sweepAngle="300"
+		strokeWidth="26" />
+
+	<arc-stroke
+		id="2"
+		static="true"
+		margin="21.5"
+		startAngle="91"
+		sweepAngle="298"
+		strokeWidth="26" />
+
+	<arc-scale
+		id="3"
+		margin="15"
+		startAngle="105"
+		sweepAngle="270"
+		scaleLength="0"
+		mainScaleLineOffset="0"
+		scaleTextPadding="-15"
+		scaleInterval="25"
+		scaleWidth="1"
+		scaleTextSize="20"
+		maxScale="100"
+		enableDrawMainScale="true" />
+
+	<arc-stroke
+		id="4"
+		static="true"
+		margin="0"
+		startAngle="105"
+		sweepAngle="270"
+		strokeWidth="2"
+		color="white"
+		alpha="255" />
+
+	<arc-scale
+		id="5"
+		margin="-5"
+		startAngle="105"
+		sweepAngle="270"
+		scaleLength="4"
+		scaleText="false"
+		mainScaleLineOffset="9"
+		scaleInterval="25"
+		scaleWidth="2"
+		maxScale="100"
+		enableDrawMainScale="true" />
+
+
+	<arc-scale
+		id="6"
+		margin="-5"
+		startAngle="105"
+		sweepAngle="270"
+		scaleLength="4"
+		scaleText="false"
+		mainScaleLineOffset="5"
+		scaleInterval="5"
+		scaleWidth="2"
+		maxScale="100"
+		enableDrawMainScale="true" />
+
+
+	<text-board
+		id=":tb0"
+		drawRect="%,0.5,0.6,0.7,0.7"
+		static="true"
+		textSize="20"
+		align="center" />
+
+	<hand
+		id=":h"
+		scaled="true"
+		margin="20"
+		startAngle="105"
+		sweepAngle="270"
+		static="false"
+		src="@drawable/p30"
+		alpha="150" />
+
+	<text-board
+		id=":tb1"
+		drawRect="%,0.6,0.75,0.8,0.85"
+		align="center"
+		static="false"
+		textSize="40"
+		alpha="255"
+		text="90" />
+</moom>

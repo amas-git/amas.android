@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	include="moom_base_6"
+	size="200x200"
+	tag=":fs.sdcard"
+    bg="@drawable/dashlight"
+    zoom="0.8">
+	<arc-stroke
+		id="1"
+		color="white"
+		alpha="255" />
+	<arc-stroke
+		id="2"
+		static="true"
+		color="#2828FF" />
+	<arc-scale
+		id="3"
+		scaleTextColor="white"
+		color="white" />
+	<arc-stroke
+		id="4"
+		color="white" />
+	<arc-scale
+		id="5"
+		color="white" />
+	<arc-scale
+		id="6"
+		color="white" />
+	<text-board
+		id=":tb0"
+		text="@string/widget_sdcard"
+		color="white" />
+	<hand
+		id=":h"
+		expr="%DISK_UP"
+		src="@drawable/p30"
+		color="green"
+		alpha="150" />
+	<text-board
+		id=":tb1"
+		expr="%DISK_UPT_VALUE"
+		color="green"
+		font="assets:///led.ttf" 
+		text="100" />
+
+</moom>

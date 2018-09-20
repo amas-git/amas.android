@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	include="moom_1x1_widget_base_4"
+	tag=":memory" >
+
+ 	<text-board
+ 	    id="1"
+		text="@string/widget_memory" 
+		color="green"/>
+ 	
+ 	<arc-scale
+ 	    id="2"
+		color="green"  />
+	
+ 	<text-board
+ 	    id="3"
+		expr="%MEM_USED" 
+		color="green" />
+	
+	<hand
+ 	    id="4"
+		expr="%MEM_PERCENT"
+		src="@drawable/pr" />
+	
+</moom>

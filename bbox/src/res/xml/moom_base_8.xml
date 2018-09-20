@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	size="200x200">
+	<arc-scale
+		id="1"
+		margin="1"
+		startAngle="135"
+		sweepAngle="270"
+		scaleLength="20"
+		mainScaleLineOffset="10"
+		scaleTextPadding="12"
+		scaleInterval="10"
+		scaleWidth="2"
+		scaleTextSize="12"
+		maxScale="100"
+		enableDrawMainScale="true" />
+	<arc-stroke
+		id="2"
+		margin="2"
+		startAngle="135"
+		sweepAngle="360"
+		strokeWidth="4" />
+	<arc-stroke
+		id="3"
+		margin="2"
+		static="false"
+		startAngle="135"
+		sweepAngle="270"
+		strokeWidth="4" />
+	<text-board
+		id=":t"
+		margin="%,0,0.6,0,0"
+		static="false"
+		textSize="20"
+		text="90%" />
+	<hand
+		id=":h"
+		margin="20"
+		startAngle="135"
+		sweepAngle="270"
+		static="false" />
+</moom>

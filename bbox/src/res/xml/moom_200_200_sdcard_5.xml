@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	include="moom_base_5"
+	size="200x200"
+	tag=":fs.sdcard"
+	name="纯文字版"
+    bg="@drawable/b23"
+    zoom="0.85">
+	<text-board
+		id=":tb0"
+		text="@string/widget_sdcard"
+		color="#32CD32"
+		alpha="200" />
+	<text-board
+		id=":tb1"
+		expr="%DISK_UPT"
+		font="assets:///led.ttf"
+		color="green" 
+		text="100%"/>
+	<text-board
+		id=":tb2"
+		expr="%DISK_UTT"
+		font="assets:///led.ttf"
+		color="green"
+		alpha="255"
+		text="0.00GB" />
+</moom>

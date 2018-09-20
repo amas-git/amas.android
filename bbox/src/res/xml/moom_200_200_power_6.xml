@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	include="moom_base_6"
+	name="无名高地电量表"
+	tag=":power"
+    bg="@drawable/dashlight"
+    zoom="0.8">
+
+	<arc-stroke
+		id="1"
+		color="white" />
+	<arc-stroke
+		id="2"
+		color="#2828FF" />
+	<arc-scale
+		id="3"
+		scaleTextColor="white"
+		color="white" />
+	<arc-stroke
+		id="4"
+		color="white" />
+	<arc-scale
+		id="5"
+		color="white" />
+	<arc-scale
+		id="6"
+		color="white" />
+	<text-board
+		id=":tb0"
+		text="@string/widget_power"
+		color="white" />
+	<hand
+		id=":h"
+		expr="%POW_LP"
+		src="@drawable/p30"
+		color="green" />
+	<text-board
+		id=":tb1"
+		expr="%POW_LT_VALUE"
+		color="green"
+		font="assets:///led.ttf" 
+		text="100" />
+</moom>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:whitetree="http://schemas.android.com/apk/res/lab.whitetree.bonny.box"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<TextView
+		android:id="@+id/et_path"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:paddingTop="0dip"
+		android:paddingBottom="0dip"
+		android:textColor="@color/green"
+		android:gravity="center_vertical"
+		android:layout_alignParentTop="true"
+		android:layout_width="fill_parent"
+		android:text="/sdcard"
+		android:layout_height="wrap_content" />
+	<LinearLayout
+		android:id="@+id/option_panel"
+		android:visibility="gone"
+		android:layout_alignParentBottom="true"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:paddingRight="?android:attr/scrollbarSize">
+		<Button
+			android:id="@+id/btn_newdir"
+			android:layout_width="fill_parent"
+			android:text="新建目录"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+
+	<ListView
+		android:id="@android:id/list"
+		android:layout_width="fill_parent"
+		android:layout_below="@id/et_path"
+		android:layout_height="wrap_content"
+		android:layout_above="@id/option_panel"
+		android:longClickable="true">
+	</ListView>
+
+	<LinearLayout
+		android:id="@+id/notify_panel"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:paddingRight="?android:attr/scrollbarSize">
+		<ImageView
+			android:id="@+id/iv_icon"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical" />
+		<TextView
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/tv_msg"
+			android:gravity="center"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_gravity="center_vertical" />
+	</LinearLayout>
+</RelativeLayout>

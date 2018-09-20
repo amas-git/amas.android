@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	include="moom_base_disk"
+	tag=":fs.sdcard"
+	name="默认的电池仪表.SDCARD">
+	<text-board
+		id=":t"
+		text="@string/sdcard" />
+	<map
+		key=":status.mounted">
+		<image
+			tag="false"
+			margin="10"
+			src="@drawable/not_avail" />
+	</map>
+</moom>

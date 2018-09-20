@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	include="moom_base_3"
+	tag=":cpu"
+	name="指针"
+	bg="@drawable/hex_bg"
+	bg-margin="0.1"
+	zoom="0.6">
+	<text-board
+		id="1"
+		drawRect="%,0,0,0.5,0.2"
+		textSize="50" 
+		color="green"
+		text="@string/widget_cpu"/>
+	
+	<arc-scale
+		id="2"
+		drawRect="0,0,400,400"
+		color="green" />
+	
+	<text-board
+		id="3"
+		drawRect="%,0.5,0.5,1,1"
+		textSize="55" 
+		color="green"
+		expr="%CPU_UPT"
+		text="100%"/>
+	
+	<hand
+		id="4"
+		drawRect="0,0,400,400"
+		expr="%CPU_UP"
+		src="@drawable/pr" />
+	
+	<image
+		margin="-40"
+		src="@drawable/b56" />
+	
+</moom>

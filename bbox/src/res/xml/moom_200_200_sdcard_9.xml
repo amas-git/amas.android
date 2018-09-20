@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	include="moom_base_9"
+	name="彩虹SDCARD"
+	tag=":fs.sdcard"
+	bg="@drawable/b55"
+	zoom="0.9">
+	<arc-stroke
+		id="1"
+		expr="%DISK_UP" />
+	<arc-stroke
+		id="2"
+		expr="%DISK_UP" />
+	<arc-stroke
+		id="3"
+		expr="%DISK_UP" />
+	<arc-stroke
+		id="4"
+		expr="%DISK_UP" />
+	<arc-stroke
+		id="5"
+		expr="%DISK_UP" />
+	<arc-stroke
+		id="6"
+		expr="%DISK_UP" />
+	<arc-stroke
+		id="7"
+		expr="%DISK_UP" />
+	<text-board
+		id=":t"
+		color="blue"
+		expr="%DISK_UPT" />
+	<text-board
+		drawRect="%,0.45,0.4,0.9,1"
+		expr="%DISK_UUT"
+		static="false"
+		textSize="13"
+		alpha="255"
+		color="blue"
+		font="assets:///r2014.ttf"
+		text="50m" />
+	<text-board
+		drawRect="%,0.45,0.5,0.9,1"
+		textSize="10"
+		text="---------"
+		alpha="255"
+		color="blue"
+		font="assets:///r2014.ttf" />
+	<text-board
+		drawRect="%,0.45,0.6,0.9,1"
+		expr="%DISK_UTT"
+		static="false"
+		textSize="13"
+		alpha="255"
+		color="blue"
+		font="assets:///r2014.ttf"
+		text="100m" />
+</moom>

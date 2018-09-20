@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+    include="moom_base_led"
+    name="移动网络"
+    size="60x60"
+    tag=":network"
+	bg="@drawable/oo"
+	zoom="0.7">
+    <text-board
+        expr="(format :network.local-ip)"
+        drawRect="%,0,0,1,1"
+        static="false"
+        textSize="16"
+        textScaleX="0.45"
+        align="center"
+        color="white"
+        text="" />
+    <text-board
+        drawRect="%,0,0.8,1,0.9"
+        textSize="10"
+        alpha="200"
+        align="center" />
+</moom>

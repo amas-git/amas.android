@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	size="60x60"
+	tag=":cpu"
+	clockwise="false" >
+	
+    <!-- 背景的绿色空心环 -->
+	<arc-stroke
+		static="true"
+		margin="3"
+		startAngle="0"
+		sweepAngle="360"
+		strokeWidth="6"
+		color="green"
+		alpha="255" />
+	
+	<arc-stroke
+		static="true"
+		margin="3"
+		startAngle="0"
+		sweepAngle="360"
+		strokeWidth="4"
+		color="#191919"
+		alpha="255" />
+
+    <!-- 主要的进度条 -->
+	<arc-stroke
+		static="false"
+		expr="%CPU_UP"
+		margin="3"
+		startAngle="270"
+		sweepAngle="360"
+		strokeWidth="4"
+		color="green"
+		alpha="255" />
+	
+    <!-- 空心的刻度线，隔开环 -->
+    <arc-scale
+        margin="-2"
+		startAngle="270"
+        sweepAngle="360"
+        scaleLength="120"
+        scaleText="false"
+        mainScaleLineOffset="-15"
+        scaleInterval="36"
+        scaleWidth="4"
+        maxScale="10"
+        enableDrawMainScale="false"
+        color="green" />
+	
+    <arc-scale
+        margin="-2"
+		startAngle="270"
+        sweepAngle="360"
+        scaleLength="120"
+        scaleText="false"
+        mainScaleLineOffset="-15"
+        scaleInterval="36"
+        scaleWidth="2"
+        maxScale="10"
+        enableDrawMainScale="false"
+        color="#191919" />
+
+    <!-- 细小的进度条 -->
+	<arc-stroke
+		static="false"
+		expr="%CPU_UP"
+		margin="3"
+		startAngle="270"
+		sweepAngle="360"
+		strokeWidth="2"
+		color="green"
+		alpha="255" />
+	
+    <!-- 内外两个大圈，把不必要的刻度线盖掉 -->
+	<arc-stroke
+		static="true"
+		margin="-8.5"
+		startAngle="0"
+		sweepAngle="360"
+		strokeWidth="16"
+		color="#191919"
+		alpha="255" />
+
+	<arc-stroke
+		static="true"
+		margin="13"
+		startAngle="0"
+		sweepAngle="360"
+		strokeWidth="14"
+		color="#191919"
+		alpha="255" />
+	
+    <!-- 文字 -->
+	<text-board
+		drawRect="%,0,0,1,0.9"
+		static="true"
+		textSize="15"
+		alpha="255"
+		align="center"
+		color="green" 
+		text="@string/notif_cpu"/>
+</moom>

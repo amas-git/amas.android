@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	include="moom_1x1_widget_base_1"
+    name="1X1widget用纯文字" 
+	tag=":memory"
+    bg="@drawable/b100"
+    zoom="0.85">
+	<text-board
+		id=":tb1"
+		text="@string/widget_memory" />
+
+	<text-board
+		id=":tb2"
+		expr="%MEM_USED" />
+</moom>

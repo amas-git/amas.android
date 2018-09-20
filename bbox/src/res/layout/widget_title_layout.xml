@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_centerHorizontal="true"
+	android:orientation="horizontal"
+	android:background="#00000000">
+	<Button
+	    android:id="@+id/x1"
+		android:layout_width="0dp"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+		android:textColor="#000"
+		android:focusable="true"
+		android:layout_gravity="center"
+		android:text="@string/widget_cpu"
+		android:onClick="onTypeCpuClick"
+		android:background="@drawable/mx"
+		android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	<Button
+	    android:id="@+id/x2"
+		android:layout_width="0dp"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+		android:textColor="#000"
+		android:focusable="true"
+		android:layout_gravity="center"
+		android:text="@string/widget_memory"
+		android:onClick="onTypeMemClick"
+		android:background="@drawable/mx"
+		android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	<Button
+	    android:id="@+id/x3"
+		android:layout_width="0dp"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+		android:textColor="#000"
+		android:layout_gravity="center"
+		android:focusable="true"
+		android:text="@string/widget_power"
+		android:onClick="onTypePowerClick"
+		android:background="@drawable/mx"
+		android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	<Button
+	     android:id="@+id/x4"
+		android:layout_width="0dp"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+		android:textColor="#000"
+		android:focusable="true"
+		android:layout_gravity="center"
+		android:text="@string/widget_sdcard"
+		android:onClick="onTypeSdcardClick"
+		android:background="@drawable/mx"
+		android:textAppearance="?android:attr/textAppearanceLarge" />
+</LinearLayout>

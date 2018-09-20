@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="translucent_background">#00000000</color>
+    
+    <color name="gray0">#F000</color>
+    <color name="gray1">#E111</color>
+    <color name="gray2">#D222</color>
+    <color name="gray3">#C333</color>
+    <color name="gray4">#B444</color>
+    <color name="gray5">#A555</color>
+    <color name="gray6">#9666</color>
+    <color name="gray7">#8777</color>
+    <color name="gray8">#7888</color>
+    <color name="gray9">#6999</color>
+    <color name="grayA">#5AAA</color>
+    <color name="grayB">#4BBB</color>
+    <color name="grayC">#3CCC</color>
+    <color name="grayD">#2DDD</color>
+    <color name="grayE">#1EEE</color>
+    <color name="grayF">#0FFF</color>
+    <color name="red">#FFFF0000</color>
+    <color name="green">#0F0</color>
+    <color name="replay_background">#e0eaff</color> 
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="blue">#FF0000FF</color>
+    <color name="gray">#FF888888</color>
+    <color name="orange">#FFED851D</color>
+	
+</resources>

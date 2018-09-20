@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	include="moom_base_9"
+	name="彩虹电池"
+	tag=":power"
+    bg="@drawable/b55"
+    zoom="0.9">
+	<arc-stroke
+		id="1"
+		expr="%POW_LP" />
+	<arc-stroke
+		id="2"
+		expr="%POW_LP" />
+	<arc-stroke
+		id="3"
+		expr="%POW_LP" />
+	<arc-stroke
+		id="4"
+		expr="%POW_LP" />
+	<arc-stroke
+		id="5"
+		expr="%POW_LP" />
+	<arc-stroke
+		id="6"
+		expr="%POW_LP" />
+	<arc-stroke
+		id="7"
+		expr="%POW_LP" />
+	<text-board
+		id=":t"
+		expr="%POW_LT"
+		color="blue" />
+	<text-board
+		drawRect="%,0.45,0.4,0.9,1"
+		expr="%POW_TT"
+		static="false"
+		textSize="13"
+		alpha="255"
+		color="blue"
+		font="assets:///r2014.ttf"
+		text="30 ℃" />
+	<text-board
+		drawRect="%,0.45,0.5,0.9,1"
+		textSize="10"
+		text="---------"
+		alpha="255"
+		color="blue"
+		font="assets:///r2014.ttf" />
+	<text-board
+		drawRect="%,0.45,0.6,0.9,1"
+		expr="%POW_VT"
+		static="false"
+		textSize="13"
+		alpha="255"
+		color="blue"
+		font="assets:///r2014.ttf"
+		text="5.0 V" />
+</moom>

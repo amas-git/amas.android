@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	size="200x200"
+	tag=":power">
+	<arc-scale
+		margin="0"
+		startAngle="135"
+		sweepAngle="270"
+		scaleLength="15"
+		mainScaleLineOffset="5"
+		scaleTextPadding="15"
+		scaleInterval="2"
+		scaleTextColor="#8B0000"
+		scaleWidth="3"
+		scaleTextSize="16"
+		maxScale="12"
+		enableDrawMainScale="true"
+		scaleTextFont="assets:///r2014.ttf"
+		color="cyan" />
+	<arc-stroke
+		margin="0"
+		startAngle="135"
+		sweepAngle="270"
+		strokeWidth="8"
+		color="cyan"
+		alpha="255" />
+	<text-board
+		drawRect="%,0,0.7,1,1"
+		expr="(format :power.voltage.v V)"
+		textSize="24"
+		alpha="255"
+		static="false"
+		font="assets:///led.ttf"
+		align="center"
+		color="#8B0000" />
+	<text-board
+		drawRect="%,0,0,1,0.8"
+		text="@string/valtage"
+		textSize="18"
+		alpha="255"
+		align="center"
+		font="assets:///led.ttf"
+		color="#8B0000" />
+	<hand
+		drawRect="%,0,0,1,1"
+		expr="(percent :power.voltage.percent)"
+		startAngle="135"
+		sweepAngle="270"
+		scaled="true"
+		static="false"
+		src="@drawable/p51" />
+</moom>

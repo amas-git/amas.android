@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	size="200x200">
+
+	<arc-stroke
+	    id="0"
+		margin="35"
+		static="true"
+		startAngle="0"
+		sweepAngle="360"
+		strokeWidth="80"
+		color="black"
+		alpha="120" />
+
+	<text-board
+		id="1"
+		margin="%,0.4,0.1,0.4,0.3"
+		static="true"
+		textSize="35"
+		align="center"/>
+
+	<arc-scale
+		id="2"
+		margin="0"
+		startAngle="18"
+		sweepAngle="27"
+		scaleLength="12"
+		scaleText="false"
+		mainScaleLineOffset="-18"
+		scaleInterval="5"
+		scaleWidth="2"
+		maxScale="5"
+		enableDrawMainScale="true"/>
+
+	<arc-scale
+		id="3"
+		margin="0"
+		startAngle="135"
+		sweepAngle="243"
+		scaleLength="12"
+		scaleText="false"
+		mainScaleLineOffset="-18"
+		scaleInterval="5"
+		scaleWidth="2"
+		maxScale="45"
+		enableDrawMainScale="true"/>
+
+	<text-board
+		id=":t"
+		margin="%,0,0.5,0,0"
+		static="false"
+		textSize="30"/>
+
+	<hand
+		id=":h"
+		scaled="true"
+		drawRect="%,0.1,0.1,0.9,0.9"
+		startAngle="135"
+		sweepAngle="270"
+		static="false"
+		src="@drawable/pw"
+		color="green"
+		alpha="150" />
+</moom>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	include="moom_base_7"
+	name="准备午饭电池"
+	tag=":power"
+    bg="@drawable/dashlight"
+    zoom="0.85">
+	<arc-scale
+		id="1"
+		scaleTextColor="cyan"
+		scaleTextFont="assets:///r2014.ttf"
+		color="cyan" />
+	<arc-stroke
+		id="2"
+		expr="%POW_LP"
+		color="green"
+		alpha="150" />
+	<arc-stroke
+		id="3"
+		expr="%POW_LP"
+		color="cyan"
+		alpha="150" />
+	<text-board
+		id=":t"
+		margin="%,0,0.5,0,0"
+		expr="%POW_LT"
+		color="#F8F8F8"
+		font="assets:///r2014.ttf" 
+		text="100%" />
+	<hand
+		id=":h"
+		expr="%POW_LP"
+		margin="20" />
+</moom>

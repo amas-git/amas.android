@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	include="moom_base_4"
+	tag=":cpu"
+	name="二段颜色"
+    bg="@drawable/dashlight"
+    zoom="0.85">
+	<arc-stroke
+		id="0"
+		color="black"
+		alpha="120" />
+	<text-board
+		id="1"
+		text="@string/widget_cpu"
+		color="green" />
+	<arc-scale
+		id="2"
+		color="red" />
+	<arc-scale
+		id="3"
+		color="green" />
+	<text-board
+		id=":t"
+		expr="%CPU_UPT"
+		color="green"
+		font="assets:///led.ttf" 
+		text="100%"/>
+	<hand
+		id=":h"
+		expr="%CPU_UP"
+		src="@drawable/pw" />
+</moom>

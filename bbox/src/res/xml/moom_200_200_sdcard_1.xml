@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<moom
+	include="moom_base_1"
+	tag=":fs.sdcard"
+	name="嫩粉色儿SDCARD" 
+	zoom="0.9">
+	<arc-stroke
+		id="1"
+		expr="%DISK_UP"
+		color="#FFC0CB" />
+	<arc-stroke
+		id="2"
+		expr="%DISK_UP"
+		color="#FFC0CB" />
+	<arc-stroke
+		id="3"
+		expr="%DISK_UP"
+		color="#FFC0CB" />
+	<arc-stroke
+		id="4"
+		expr="%DISK_UP"
+		color="#FFC0CB" />
+	<arc-stroke
+		id="5"
+		expr="%DISK_UP"
+		color="#FFC0CB" />
+	<arc-stroke
+		id="6"
+		expr="%DISK_UP"
+		color="#FFC0CB" />
+	<arc-stroke
+		id="7"
+		expr="%DISK_UP"
+		color="#FFC0CB" />
+	<text-board
+		id="8"
+		expr="%DISK_UPT"
+		color="#FFC0CB"
+		font="assets:///r2014.ttf"
+		text="100%" />
+</moom>

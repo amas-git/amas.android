@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">BonnyBox</string>
+    <string name="kill_all">全部終了</string>
+    <string name="alert_dialog_ok">OK</string>
+    <string name="alert_dialog_cancel">キャンセル</string>
+    <string name="sdcard">SDカード</string>
+	<string name="extsdcard">SDcardEx</string>
+	<string name="test_cpu_performance">CPUテスト</string>
+	<string name="cpu_max_frequency">"最大周波数"</string>
+	<string name="cpu_min_frequency">"最小周波数"</string>
+	<string name="cpu_cur_frequency">"現在周波数"</string>
+	<string name="cpu_performance_result">"時間\t: <xliff:g id="name">%.3f</xliff:g> 秒\nスコア\t: <xliff:g id="name">%.1f</xliff:g>"</string>
+	<string name="cpu_performance_title">"テスト結果"</string>
+	<string name="sdcardoffline">SDCardスアクセスできない</string>
+	<!-- ZGN  -->
+	<string name="cpu_usage">"使用率"</string>
+	<string name="cpu_freq">"周波"</string>
+	<string name="cpu_temp">"温度"</string>
+	<string name="power_temp">"温度"</string>
+	
+	<string name="notif_memory">"MEM"</string>
+	<string name="notif_cpu">"CPU"</string>
+	<string name="notif_disk">"SD"</string>
+	<string name="notif_cell">"電量"</string>
+	
+	<string name="widget_power">電量</string>
+	<string name="widget_memory">MEM</string>
+	<string name="widget_cpu">CPU</string>
+	<string name="widget_sdcard">SD</string>
+	<string name="widget_app">アプリ</string>
+	<string name="widget_network">ネットワーク</string>
+	
+	<string name="uninstall">削除</string>
+	
+	<string name="setting_screen_title_setting">設定</string>
+	<string name="setting_screen_title_support">サポート アス</string>
+	<string name="setting_notification_title">通知バー</string>
+	<string name="setting_notification_on">通知バーに表示</string>
+	<string name="setting_notification_off">通知バーに表示しない</string>
+	<string name="setting_adwall_title">アプリ推奨</string>
+	<string name="setting_feedback_title">お問い合わせ</string>
+	<string name="setting_set_notification_bar_style">通知バーのウィジェット</string>
+	<string name="setting_summary_set_notification_bar_style">通知バーに表示するウィジェットを選択してください</string>
+	<string name="choose_temp_unit_title">温度ユニット</string>
+	<string name="choose_temp_unit_dialog_title">温度ユニット</string>
+	
+	<string name="temperature_unit_celsius">摂氏 °C</string>
+	<string name="temperature_unit_fahrenheit">华氏 °F</string>
+	
+    
+    <string name="menu_rating">採点</string>
+    <!-- Title of rating dialog -->
+    <string name="support_us">サポート アス</string>
+    <!-- Content of rating dialog -->
+    <string name="support_content">Rate Bonny Box and help it grow better.\n</string>
+    <string name="support_check">すでに評価した.そのダイアログを再表示しない.</string>
+    
+    
+    <string name="update_title">アプリを更新</string>
+    <string name="update_app">更新</string>
+    <string name="update_msg">今新しいバージョンを出った、更新してください！</string>
+    
+    
+    <!-- menu  -->
+    <string name="menu_contact_us">お問い合わせ</string>
+    <string name="menu_rate_us">サポート アス</string>
+    <string name="menu_our_app">Our App</string>
+    
+    <!-- contact us -->
+    <string name="contactus_email">whitetree.lab@gmail.com</string>
+    <string name="contactus_subject">お問い合わせ</string>
+    
+    <!-- ZJB  -->
+    <string name="valtage">電圧</string>
+    <string name="userapps">アプリ</string>
+    <string name="storage">ストレージ</string>
+    <string name="power">バッテリー</string>
+    <string name="delete">削除</string>
+    <string name="warn_delete_file">ファイルを削除</string>
+    <string name="rename">リネーム</string>
+    <string name="copy">コピー</string>
+    <string name="paste">貼付</string>
+    <string name="move">移動</string>
+    <string name="cut">カット</string>
+    <string name="new_dir">新規フォルダ</string>
+    <string name="share">シェア</string>
+    <string name="open_failed">サポートされていないファイル形式ので、開くこ趣扦蓼护�.</string>
+    <string name="system">システム</string>
+    <string name="data">データ</string>
+    <string name="mimi">"読み取り権限を持っていないので、開くことができません ."</string>
+    
+    <string name="good">良い</string>
+    <string name="overheat">過熱</string>
+    <string name="overv">電圧を超える</string>
+    <string name="dead">電池が切れる</string>
+    <string name="unknown_error">不明なエラー</string>
+    <string name="ac">ACで供电</string>
+    <string name="acusb">AC+USBで供电</string>
+    <string name="usb">USBで供电</string>
+    <string name="unplugged">アンプラグド</string>
+    
+    <string name="widget_title_1">Bonny Box (1X1)</string>
+    <string name="widget_title_2">Bonny Box (2X2)</string>
+    
+	<string name="moomview_choose_dialog_title">スタイルを選択して下さい:</string>
+    
+	<string name="desc_func_apps">インストールしたアプリ</string>
+	<string name="desc_func_power">バッテリー情報</string>
+	<string name="desc_func_cpu">CPU情報</string>
+	<string name="desc_func_sdcard">ストレージ情報</string>
+	<string name="desc_func_memory">メモリ情報</string>
+	<string name="desc_func_network">ネットワーク情報</string>
+	
+	<string name="notif_memory_desc">"現在のメモリ使用量を表示する"</string>
+	<string name="notif_cpu_desc">"CPU使用率を表示する"</string>
+	<string name="notif_disk_desc">"SDカードの使用状況を表示する"</string>
+	<string name="notif_cell_desc">"バッテリー情報を表示する"</string>
+	<string name="notif_network_desc">"ネットワークトラフィック情報を表示する"</string>
+</resources>

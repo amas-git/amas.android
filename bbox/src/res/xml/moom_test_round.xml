@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	size="200x200">
+	<arc-stroke
+		margin="0"
+		startAngle="135"
+		sweepAngle="360"
+		strokeWidth="2"
+		color="cyan"
+		alpha="150" />
+	<arc-stroke
+		margin="5"
+		startAngle="135"
+		sweepAngle="360"
+		strokeWidth="2"
+		color="cyan"
+		alpha="150" />
+	<arc-stroke
+		margin="10"
+		startAngle="135"
+		sweepAngle="360"
+		strokeWidth="2"
+		color="cyan"
+		alpha="150" />
+	<arc-stroke
+		margin="20"
+		startAngle="135"
+		sweepAngle="360"
+		strokeWidth="2"
+		color="cyan"
+		alpha="150" />
+	<arc-stroke
+		margin="30"
+		startAngle="135"
+		sweepAngle="360"
+		strokeWidth="2"
+		color="cyan"
+		alpha="150" />
+	<arc-stroke
+		margin="40"
+		startAngle="135"
+		sweepAngle="360"
+		strokeWidth="2"
+		color="cyan"
+		alpha="150" />
+	<arc-stroke
+		margin="50"
+		startAngle="135"
+		sweepAngle="360"
+		strokeWidth="2"
+		color="cyan"
+		alpha="150" />
+</moom>

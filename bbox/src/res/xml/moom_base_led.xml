@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	size="60x60">
+	<text-board
+		id=":t1"
+		drawRect="%,0,0,1,0.8"
+		static="false"
+		textSize="30"
+		align="center"
+		font="assets:///led.ttf"/>
+	<text-board
+		id=":t2"
+		drawRect="%,0,0.8,1,0.9"
+		textSize="10"
+		alpha="200"
+		align="center" />
+</moom>

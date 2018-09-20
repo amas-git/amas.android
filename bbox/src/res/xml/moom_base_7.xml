@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	size="200x200">
+	<arc-scale
+		id="1"
+		margin="15"
+		startAngle="135"
+		sweepAngle="270"
+		scaleLength="10"
+		mainScaleLineOffset="-15"
+		scaleTextPadding="-15"
+		scaleInterval="10"
+		scaleWidth="2"
+		scaleTextSize="12"
+		maxScale="100"
+		enableDrawMainScale="true"
+		color="cyan" />
+	<arc-stroke
+		id="2"
+		static="false"
+		margin="45"
+		startAngle="135"
+		sweepAngle="270"
+		strokeWidth="7" />
+	<arc-stroke
+		id="3"
+		static="false"
+		margin="25"
+		startAngle="135"
+		sweepAngle="270"
+		strokeWidth="2" />
+	<text-board
+		id=":t"
+		margin="%,0,0.5,0,0"
+		static="false"
+		textSize="20"
+		alpha="255" />
+	<hand
+		id=":h"
+		margin="20"
+		startAngle="135"
+		sweepAngle="270"
+		static="false"
+		src="@drawable/pointer" />
+</moom>

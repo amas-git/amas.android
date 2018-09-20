@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:whitetree="http://schemas.android.com/apk/res/lab.whitetree.bonny.box"
+	android:id="@+id/root"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#888"
+	android:orientation="vertical">
+	<TextView
+		android:textColor="#F00"
+		android:textSize="16dp"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:id="@+id/tv1" />
+	<org.whitetree.bidget.moom.MoomView
+		android:id="@+id/moom"
+		android:layout_width="260dp"
+		android:layout_height="260dp"
+		android:layout_gravity="center"
+		android:background="#AAA"
+		whitetree:configure="res:///moom_200_200_mem_7" />
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:layout_gravity="bottom">
+		<Button
+			android:onClick="onZoomInc"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_gravity="bottom"
+			android:layout_weight="1"
+			android:text="Zoom++" />
+		<Button
+			android:onClick="onZoomDec"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:text="Zoom--" />
+	</LinearLayout>
+</FrameLayout>

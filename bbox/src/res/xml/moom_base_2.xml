@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	size="200x200">
+	<image
+		margin="-10"
+		src="@drawable/bb" />
+	<arc-scale
+		id="2"
+		margin="0"
+		startAngle="135"
+		sweepAngle="270"
+		scaleLength="15"
+		mainScaleLineOffset="5"
+		scaleTextPadding="15"
+		scaleInterval="10"
+		scaleWidth="2"
+		scaleTextSize="12"
+		maxScale="100"
+		enableDrawMainScale="true" />
+	<text-board
+		id="3"
+		drawRect="%,0,0.7,1,1"
+		textSize="30"
+		static="false"
+		align="center" />
+	<text-board
+		id="4"
+		drawRect="%,0,0,1,0.7"
+		textSize="30"
+		align="center" />
+	<hand
+		id="5"
+		drawRect="%,0,0,1,1"
+		startAngle="135"
+		sweepAngle="270"
+		scaled="true"
+		static="false" />
+</moom>

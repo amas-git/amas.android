@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	include="moom_base_1"
+	tag=":memory"
+	name="嫩粉色儿内存"
+	zoom="0.9">
+	<arc-stroke
+		id="1"
+		color="#FFC0CB"
+		expr="%MEM_PERCENT" />
+	<arc-stroke
+		id="2"
+		color="#FFC0CB"
+		expr="%MEM_PERCENT" />
+	<arc-stroke
+		id="3"
+		color="#FFC0CB"
+		expr="%MEM_PERCENT" />
+	<arc-stroke
+		id="4"
+		color="#FFC0CB"
+		expr="%MEM_PERCENT" />
+	<arc-stroke
+		id="5"
+		color="#FFC0CB"
+		expr="%MEM_PERCENT" />
+	<arc-stroke
+		id="6"
+		color="#FFC0CB"
+		expr="%MEM_PERCENT" />
+	<arc-stroke
+		id="7"
+		color="#FFC0CB"
+		expr="%MEM_PERCENT" />
+	<text-board
+		id="8"
+		color="#FFC0CB"
+		font="assets:///r2014.ttf"
+		expr="%MEM_USED"
+		text="100%" />
+</moom>

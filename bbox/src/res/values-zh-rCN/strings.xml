@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Bonny工具箱</string>
+    <string name="kill_all">全部结束</string>
+    <string name="alert_dialog_ok">确定</string>
+	<string name="alert_dialog_cancel">取消</string>
+	<string name="extsdcard">外置存储</string>
+	<string name="sdcard">存储卡</string>
+	<string name="sdcardoffline">存储卡暂时不可用,可能是插电脑上了</string>
+	
+	<string name="test_cpu_performance">"性能测试"</string>
+	<string name="cpu_max_frequency">"最大频率"</string>
+	<string name="cpu_min_frequency">"最小频率"</string>
+	<string name="cpu_cur_frequency">"当前频率"</string>
+	<string name="cpu_performance_result">"耗时\t: <xliff:g id="name">%.3f</xliff:g> 秒\n评分\t: <xliff:g id="name">%.1f</xliff:g> 分"</string>
+	<string name="cpu_performance_title">"测试结果"</string>
+	
+	<string name="cpu_usage">"使用率"</string>
+	<string name="cpu_freq">"频率"</string>
+	<string name="cpu_temp">"温度"</string>
+	<string name="power_temp">"温度"</string>
+	
+	<string name="notif_memory">"内存"</string>
+	<string name="notif_cpu">"CPU"</string>
+	<string name="notif_disk">"SD卡"</string>
+	<string name="notif_cell">"电量"</string>
+	
+	<string name="widget_power">电量</string>
+	<string name="widget_memory">内存</string>
+	<string name="widget_cpu">CPU</string>
+	<string name="widget_sdcard">SD卡</string>
+	<string name="widget_app">应用</string>
+	<string name="widget_network">网络</string>
+	
+	<string name="uninstall">卸载</string>
+	
+	<string name="setting_screen_title_setting">设置</string>
+	<string name="setting_screen_title_support">支持我们</string>
+	<string name="setting_notification_title">通知栏</string>
+	<string name="setting_notification_on">显示</string>
+	<string name="setting_notification_off">不显示</string>
+	<string name="setting_adwall_title">应用推荐</string>
+	<string name="setting_feedback_title">联系我们</string>
+	<string name="setting_set_notification_bar_style">通知栏样式</string>
+	<string name="setting_summary_set_notification_bar_style">设置通知栏样式</string>
+	<string name="choose_temp_unit_title">温度单位</string>
+	<string name="choose_temp_unit_dialog_title">温度单位</string>
+	
+	<string name="temperature_unit_celsius">摄氏 °C</string>
+	<string name="temperature_unit_fahrenheit">华氏 °F</string>
+	
+    <string name="support_us">支持我们</string>
+    <string name="support_content">亲，您若喜欢Bonny工具箱，就给评个高分，帮大家找到我们吧。\n</string>
+    <string name="support_check">已经评分，不再提醒。</string>
+    <string name="menu_rating">评个高分</string>
+    
+    
+    <string name="update_title">软件更新</string>
+    <string name="update_app">更新</string>
+    <string name="update_msg">Bonny工具箱已经出新版本了，赶快下载更新吧。</string>
+	
+	<!-- menu  -->
+    <string name="menu_contact_us">联系我们</string>
+    <string name="menu_rate_us">支持一下</string>
+    <string name="menu_our_app">我们的应用</string>
+    
+    <!-- contact us -->
+    <string name="contactus_email">whitetree.lab@gmail.com</string>
+    <string name="contactus_subject">Bonny BOX Feedback</string>
+    
+        <!-- ZJB  -->
+    <string name="valtage">电压</string>
+    <string name="userapps">应用</string>
+    <string name="storage">存储</string>
+    <string name="power">电池</string>
+    <string name="delete">删除</string>
+    <string name="warn_delete_file">要删除文件了</string>
+    <string name="rename">重命名</string>
+    <string name="copy">拷贝</string>
+    <string name="paste">粘贴</string>
+    <string name="move">移动</string>
+    <string name="cut">剪切</string>
+    <string name="new_dir">新间建</string>
+    <string name="share">共享</string>
+    <string name="open_failed">哥,打不开</string>
+    <string name="system">系统</string>
+    <string name="data">数据</string>
+    <string name="mimi">哥,这里面全是私密，还是别看了</string>
+    
+    <string name="good">电池处于正常工作状态</string>
+    <string name="overheat">电池过热，吹吹风也是好的呀</string>
+    <string name="overv">电压过高，小心被烧</string>
+    <string name="dead">电量耗尽</string>
+    <string name="unknown_error">电池发生了莫名其妙的故障</string>
+    <string name="ac">手机由充电器供电</string>
+    <string name="acusb">手机由充电器和USB供电</string>
+    <string name="usb">手机由USB供电</string>
+    <string name="unplugged">手机由电池供电</string>
+   
+    
+    <string name="widget_title_1">Bonny Box (1X1)</string>
+    <string name="widget_title_2">Bonny Box (2X2)</string>
+    
+    
+	<string name="moomview_choose_dialog_title">选择</string>
+    
+	<string name="desc_func_apps">显示已装应用信息</string>
+	<string name="desc_func_power">显示电量信息</string>
+	<string name="desc_func_cpu">显示CPU信息</string>
+	<string name="desc_func_sdcard">显示存储卡信息</string>
+	<string name="desc_func_memory">显示内存信息</string>
+	<string name="desc_func_network">显示网络信息</string>
+	
+	<string name="notif_memory_desc">"显示当前内存使用情况"</string>
+	<string name="notif_cpu_desc">"显示CPU占用率"</string>
+	<string name="notif_disk_desc">"显示SD卡使用情况"</string>
+	<string name="notif_cell_desc">"显示电池电量信息"</string>
+	<string name="notif_network_desc">"显示网络流量信息"</string>
+</resources>

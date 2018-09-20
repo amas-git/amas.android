@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:whitetree="http://schemas.android.com/apk/res/lab.whitetree.bonny.box"
+	android:layout_width="260dp"
+	android:layout_height="260dp"
+	android:layout_centerHorizontal="true"
+	android:layout_marginTop="10px"
+	android:orientation="vertical">
+	<org.whitetree.bidget.moom.MoomView
+		android:id="@+id/moom"
+		android:clickable="false"
+		android:focusable="false"
+		android:layout_width="200dp"
+		android:layout_height="200dp"
+		whitetree:configure="res:///moom_200_200_mem_7"
+		android:layout_gravity="center" />
+</FrameLayout>

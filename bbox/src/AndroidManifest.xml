@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="lab.whitetree.bonny.box"
+    android:versionCode="2"
+    android:versionName="1.01" >
+
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="9" />
+
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    
+    <application
+        android:icon="@drawable/x"
+        android:name=".App"
+        android:debuggable="true"
+        android:label="@string/app_name">
+        <activity
+            android:name=".Main"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.MoomGalleryActivity"
+            android:configChanges="keyboardHidden|orientation" 
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:name=".ui.filemanager.FileManager"
+            android:configChanges="keyboardHidden|orientation" 
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:name=".ui.TaskList"
+            android:configChanges="keyboardHidden|orientation" 
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:name=".ui.BatteryActivity"
+            android:configChanges="keyboardHidden|orientation" 
+            android:screenOrientation="portrait">
+        </activity>
+ 
+        <activity
+            android:name=".ui.DiskActivity"
+            android:configChanges="keyboardHidden|orientation" 
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".ui.NetworkInfoActivity"
+            android:configChanges="keyboardHidden|orientation" 
+            android:screenOrientation="portrait">
+        </activity>
+           
+        <activity
+            android:name=".ui.Hell"
+            android:configChanges="keyboardHidden|orientation" 
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="lab.whitetree.bonny.box.MOOM_PREVIEW" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".ui.UninstallerActivity"
+            android:configChanges="keyboardHidden|orientation" 
+            android:screenOrientation="portrait">
+        </activity>
+                         
+        <activity
+            android:name=".ui.DialogActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.Translucent"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <service android:name=".service.LocalService">
+            <intent-filter>
+                <action android:name="lab.whitetree.bonny.box.ACTION_START" />
+                <action android:name="lab.whitetree.bonny.box.ACTION_SUBSCRIBE" />
+                <action android:name="lab.whitetree.bonny.box.ACTION_UNSUBSCRIBE" />
+                <action android:name="lab.whitetree.bonny.box.ACTION_CTRL" />
+                <action android:name="lab.whitetree.bonny.box.ACTION_TOUCH" />
+                <action android:name="lab.whitetree.bonny.box.ACTION_QUERY" />
+            </intent-filter>
+        </service>
+        
+        <service android:name=".service.NotificationService">
+            <intent-filter>
+                <action android:name="lab.whitetree.bonny.box.ACTION_START" />
+                <action android:name="lab.whitetree.bonny.box.ACTION_REFRESH" />
+                <action android:name="lab.whitetree.bonny.box.ACTION_MOOM_CONFIG_CHANGED"/>
+            </intent-filter>
+        </service>
+        
+       <activity
+            android:name=".appwidget.configure.AppWidgetConfigure1"
+            android:configChanges="keyboardHidden|orientation"
+            android:excludeFromRecents="true"
+            android:theme="@android:style/Theme.Translucent" 
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".appwidget.configure.AppWidgetConfigure2" 
+            android:configChanges="keyboardHidden|orientation"
+            android:excludeFromRecents="true"
+            android:theme="@android:style/Theme.Translucent"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+        
+        <receiver
+            android:label="@string/widget_title_1"
+            android:name=".appwidget.AppWidgetProvider1">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.appwidget.action.APPWIDGET_CHANGE_DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/appwidget_info_1" />
+        </receiver>
+        
+        <receiver
+            android:label="@string/widget_title_2"
+            android:name=".appwidget.AppWidgetProvider2">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.appwidget.action.APPWIDGET_CHANGE_DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/appwidget_info_2" />
+        </receiver>
+        
+        <activity
+            android:name=".ui.CpuActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait" />
+        
+        <activity android:name=".ui.CpuTestPerformanceActivity"
+            android:theme="@android:style/Theme.Dialog"
+            android:label="@string/test_cpu_performance"
+            android:screenOrientation="portrait"/>
+        
+        <receiver android:name=".service.SysActionReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        
+        <activity
+            android:name=".ui.SettingActivity"
+            android:configChanges="keyboardHidden|orientation" 
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".ui.AdWallActivity"
+            android:configChanges="keyboardHidden|orientation" 
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.MoomViewGalleryActivity"
+            android:configChanges="keyboardHidden|orientation" 
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.NotificationStyleActivity"
+            android:configChanges="keyboardHidden|orientation" 
+            android:screenOrientation="portrait" />
+        
+        <!-- umeng -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="4fc87bdb527015584f00000c" />
+        <!-- admob -->
+        <meta-data
+            android:name="ADMOB_PUBLISHER_ID"
+            android:value="a14fc87f3799fa5" />
+
+ 
+    </application>
+</manifest>

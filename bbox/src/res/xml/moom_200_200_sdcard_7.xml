@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	include="moom_base_7"
+	name="准备午饭SDCARD"
+	tag=":fs.sdcard"
+    bg="@drawable/dashlight"
+    zoom="0.85">
+	<arc-scale
+		id="1"
+		scaleTextColor="cyan"
+		scaleTextFont="assets:///r2014.ttf"
+		color="cyan" />
+	<arc-stroke
+		id="2"
+		expr="%DISK_UP"
+		color="green"
+		alpha="150" />
+	<arc-stroke
+		id="3"
+		expr="%DISK_UP"
+		color="cyan"
+		alpha="150" />
+	<text-board
+		id=":t"
+		expr="%DISK_UPT"
+		color="#F8F8F8"
+		font="assets:///r2014.ttf"
+		text="100%"  />
+	<hand
+		id=":h"
+		expr="%DISK_UP"
+		src="@drawable/pointer" />
+</moom>

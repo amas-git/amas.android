@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	size="200x200"
+	zoom="0.8"
+	bg="@drawable/pc"
+	bg-margin="0.1"
+	tag=":memory">
+	<text-board
+		drawRect="-40,30,100,30"
+		textSize="10"
+		align="left"
+		color="black"
+		font="assets:///led.ttf"
+		text="$ free" />
+	<text-board
+		drawRect="-40,50,100,50"
+		expr="(formatb 'used    : ' :memory.used)"
+		align="left"
+		static="false"
+		textSize="15"
+		font="assets:///led.ttf"
+		text="used   : 40 MB"
+		color="red" />
+	<text-board
+		drawRect="-40,80,100,50"
+		expr="(formatb 'free    : ' :memory.free)"
+		align="left"
+		static="false"
+		textSize="15"
+		text="free   : 60 MB"
+		font="assets:///led.ttf"
+		color="#006400" />
+	<text-board
+		drawRect="-40,110,100,50"
+		expr="(formatb 'total   : ' :memory.TOTAL)"
+		static="false"
+		align="left"
+		textSize="15"
+		color="blue"
+		text="total   : 100 MB"
+		font="assets:///led.ttf" />
+	<text-board
+		drawRect="%,0,0.8,1,1"
+		expr="%MEM_USED"
+		static="false"
+		textSize="15"
+		color="white"
+		text="60%"
+		font="assets:///led.ttf" />
+</moom>

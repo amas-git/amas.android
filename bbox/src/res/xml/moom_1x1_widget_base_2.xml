@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	size="120x120"
+	bg="@drawable/oo"
+	zoom="0.7">
+	<arc-stroke
+		id=":as0"
+		static="true"
+		margin="2"
+		startAngle="135"
+		sweepAngle="270"
+		strokeWidth="20" 
+		color="#28FF28"
+		alpha="80"/>
+	<arc-stroke
+		id=":as1"
+		static="false"
+		margin="2"
+		startAngle="132"
+		sweepAngle="276"
+		strokeWidth="24" 
+		color="green"
+		alpha="90"/>
+	<arc-stroke
+		id=":as2"
+		static="false"
+		margin="2"
+		startAngle="135"
+		sweepAngle="270"
+		strokeWidth="16"
+		color="green"  />
+	<text-board
+		id=":tp"
+		drawRect="%,0.5,0.5,0.5,0.5"
+		static="false"
+		textSize="28"
+		align="center"
+		font="assets:///r2014.ttf"
+		color="green"  
+		text="100%"/>
+	<text-board
+		id=":tt"
+		drawRect="%,0,0.8,1,0.9"
+		textSize="30"
+		align="center" 
+		color="green" />
+</moom>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	include="moom_1x1_widget_base_2"
+	tag=":power" >
+
+	<arc-stroke
+		id=":as1"
+		expr="%POW_LP"/>
+
+	<arc-stroke
+		id=":as2"
+		expr="%POW_LP"/>
+
+	<text-board
+		id=":tp"
+		expr="%POW_LT"/>
+
+	<text-board
+		id=":tt"
+		text="@string/widget_power"/>
+	
+	<map
+		key=":power.status">
+		<image
+			tag="charging"
+			margin="10"
+			src="@drawable/charging" />
+	</map>
+</moom>

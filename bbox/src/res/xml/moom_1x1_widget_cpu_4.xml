@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	include="moom_1x1_widget_base_4"
+	tag=":cpu" >
+
+ 	<text-board
+ 	    id="1"
+		text="@string/widget_cpu"
+		color="red"/>
+ 	
+ 	<arc-scale
+ 	    id="2"
+		color="#FF4500"  />
+	
+ 	<text-board
+ 	    id="3"
+		expr="%CPU_UPT"
+		color="red" />
+	
+	<hand
+ 	    id="4"
+		expr="%CPU_UP"
+		src="@drawable/pr" />
+	
+</moom>

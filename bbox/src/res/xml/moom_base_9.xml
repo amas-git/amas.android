@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+	彩虹 -->
+<moom
+	size="200x200">
+	<arc-stroke
+		drawRect="10,10,190,190"
+		startAngle="90"
+		sweepAngle="270"
+		strokeWidth="8"
+		color="red"
+		alpha="50" />
+	<arc-stroke
+		drawRect="20,20,180,180"
+		startAngle="90"
+		sweepAngle="270"
+		strokeWidth="8"
+		color="#FFA500"
+		alpha="50" />
+	<arc-stroke
+		drawRect="30,30,170,170"
+		startAngle="90"
+		sweepAngle="270"
+		strokeWidth="8"
+		color="yellow"
+		alpha="50" />
+	<arc-stroke
+		drawRect="40,40,160,160"
+		startAngle="90"
+		sweepAngle="270"
+		strokeWidth="8"
+		color="green"
+		alpha="50" />
+	<arc-stroke
+		drawRect="50,50,150,150"
+		startAngle="90"
+		sweepAngle="270"
+		color="cyan"
+		alpha="50"
+		strokeWidth="8" />
+	<arc-stroke
+		drawRect="60,60,140,140"
+		startAngle="90"
+		sweepAngle="270"
+		strokeWidth="8"
+		color="blue"
+		alpha="50" />
+	<arc-stroke
+		drawRect="70,70,130,130"
+		startAngle="90"
+		sweepAngle="270"
+		strokeWidth="8"
+		color="#4B0082"
+		alpha="50" />
+
+	<arc-stroke
+		id="1"
+		static="false"
+		drawRect="10,10,190,190"
+		startAngle="90"
+		sweepAngle="270"
+		strokeWidth="8"
+		color="red" />
+	<arc-stroke
+		id="2"
+		static="false"
+		drawRect="20,20,180,180"
+		startAngle="90"
+		sweepAngle="270"
+		strokeWidth="8"
+		color="#FFA500" />
+	<arc-stroke
+		id="3"
+		static="false"
+		drawRect="30,30,170,170"
+		startAngle="90"
+		sweepAngle="270"
+		strokeWidth="8"
+		color="yellow" />
+	<arc-stroke
+		id="4"
+		static="false"
+		drawRect="40,40,160,160"
+		startAngle="90"
+		sweepAngle="270"
+		strokeWidth="8"
+		color="green" />
+	<arc-stroke
+		id="5"
+		static="false"
+		drawRect="50,50,150,150"
+		startAngle="90"
+		sweepAngle="270"
+		strokeWidth="8"
+		color="cyan" />
+	<arc-stroke
+		id="6"
+		static="false"
+		drawRect="60,60,140,140"
+		startAngle="90"
+		sweepAngle="270"
+		strokeWidth="8"
+		color="blue" />
+	<arc-stroke
+		id="7"
+		static="false"
+		drawRect="70,70,130,130"
+		startAngle="90"
+		sweepAngle="270"
+		strokeWidth="8"
+		color="#4B0082" />
+	<text-board
+	    id=":t"
+		drawRect="%,0,0,1,1"
+		static="false"
+		textSize="18"
+		alpha="255"
+		color="green"
+		text="90%" />
+</moom>

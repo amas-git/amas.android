@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	include="moom_1x1_widget_base_2"
+	tag=":fs.sdcard">
+
+	<arc-stroke
+		id=":as1"
+		expr="%DISK_UP" />
+
+	<arc-stroke
+		id=":as2"
+		expr="%DISK_UP" />
+
+	<text-board
+		id=":tp"
+		expr="%DISK_UPT" />
+
+	<text-board
+		id=":tt"
+		text="@string/widget_sdcard"/>
+	
+	<map
+		key=":status.mounted">
+		<image
+			tag="false"
+			margin="10"
+			src="@drawable/not_avail" />
+	</map>
+</moom>

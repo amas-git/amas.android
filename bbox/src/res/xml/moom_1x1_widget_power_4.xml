@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	include="moom_1x1_widget_base_4"
+	tag=":power">
+
+ 	<text-board
+ 	    id="1"
+		text="@string/widget_power" 
+		color="#2894FF"/>
+ 	
+ 	<arc-scale
+ 	    id="2"
+		color="#4A4AFF" />
+	
+ 	<text-board
+ 	    id="3"
+		expr="%POW_LT"
+		color="#2894FF"  />
+	
+	<hand
+ 	    id="4"
+		expr="%POW_LP"
+		src="@drawable/pr" />
+	
+</moom>

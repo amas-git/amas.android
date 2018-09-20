@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/layout"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/activity_bg"
+	android:orientation="vertical">
+
+    <fragment 
+	    android:name="lab.whitetree.bonny.box.ui.fragments.BatteryFragment"  
+        android:id="@+id/fragment_battery" 
+        android:layout_width="fill_parent" 
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+	
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	include="moom_base_2"
+	tag=":memory"
+	zoom="0.65"
+	bg="@drawable/oo1"
+	bg-margin="0.1"
+	name="四分之三内存">
+
+	<arc-scale
+		id="2"
+		scaleTextColor="white"
+		scaleTextFont="assets:///r2014.ttf"
+		color="white" />
+	<text-board
+		id="4"
+		drawRect="%,0,0.7,1,1"
+		color="white"
+		text="@string/widget_memory" />
+	<hand
+		id="5"
+		src="@drawable/h6"
+		zoom="0.75"
+		expr="%MEM_PERCENT" />
+</moom>

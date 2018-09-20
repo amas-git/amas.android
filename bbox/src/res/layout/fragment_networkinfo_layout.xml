@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:whitetree="http://schemas.android.com/apk/res/lab.whitetree.bonny.box"
+	android:layout_width="fill_parent"
+	android:background="#414f56"
+	android:id="@+id/root"
+	android:layout_height="fill_parent">
+	<lab.whitetree.bonny.box.ui.NetworkInfoBoard
+		android:id="@+id/board"
+		android:background="#414f56"
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent"
+		android:layout_gravity="center"
+		android:gravity="center_vertical"/>
+</FrameLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	include="moom_1x1_widget_base_2"
+	tag=":cpu" >
+
+	<arc-stroke
+		id=":as1"
+		expr="%CPU_UP"  />
+
+	<arc-stroke
+		id=":as2"
+		expr="%CPU_UP" />
+
+	<text-board
+		id=":tp"
+		expr="%CPU_UPT"  />
+
+	<text-board
+		id=":tt"
+		color="green"
+		text="CPU" />
+</moom>

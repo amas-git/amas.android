@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	include="moom_base_9"
+	name="彩虹CPU"
+	tag=":cpu"
+	bg="@drawable/b55"
+	zoom="0.9">
+	<arc-stroke
+		id="1"
+		expr="%CPU_UP" />
+	<arc-stroke
+		id="2"
+		expr="%CPU_UP" />
+	<arc-stroke
+		id="3"
+		expr="%CPU_UP" />
+	<arc-stroke
+		id="4"
+		expr="%CPU_UP" />
+	<arc-stroke
+		id="5"
+		expr="%CPU_UP" />
+	<arc-stroke
+		id="6"
+		expr="%CPU_UP" />
+	<arc-stroke
+		id="7"
+		expr="%CPU_UP" />
+	<text-board
+		id=":t"
+		color="blue" 
+		expr="%CPU_UPT" />
+
+	<text-board
+		drawRect="%,0.45,0.4,0.9,1"
+		expr="%CPU_CN"
+		static="false"
+		textSize="13"
+		alpha="255"
+		color="blue"
+		font="assets:///r2014.ttf"
+		text="1" />
+	<text-board
+		drawRect="%,0.45,0.5,0.9,1"
+		textSize="10"
+		text="---------"
+		alpha="255"
+		color="blue"
+		font="assets:///r2014.ttf" />
+	<text-board
+		drawRect="%,0.45,0.6,0.9,1"
+		expr="%CPU_FC"
+		static="false"
+		textSize="13"
+		alpha="255"
+		color="blue"
+		font="assets:///r2014.ttf"
+		text="300MHz" />
+</moom>

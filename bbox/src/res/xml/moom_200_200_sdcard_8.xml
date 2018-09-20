@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	include="moom_base_8"
+	tag=":fs.sdcard"
+	name="下午三点半SDCARD"
+    bg="@drawable/b55"
+    zoom="0.8">
+	<arc-scale
+		id="1"
+		scaleTextColor="red"
+		scaleTextFont="assets:///r2014.ttf"
+		color="red" />
+	<arc-stroke
+		id="2"
+		color="red"
+		alpha="200" />
+	<arc-stroke
+		id="3"
+		expr="%DISK_UP"
+		color="yellow" />
+	<text-board
+		id=":t"
+		expr="%DISK_UPT"
+		color="red"
+		font="assets:///r2014.ttf" />
+	<hand
+		id=":h"
+		expr="%DISK_UP"
+		src="@drawable/star" 
+		zoom="0.65"/>
+</moom>

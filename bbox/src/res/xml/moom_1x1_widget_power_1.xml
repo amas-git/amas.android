@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	include="moom_1x1_widget_base_1"
+    name="1X1纯文字电池"
+	tag=":power"
+    bg="@drawable/b100"
+    zoom="0.85">
+	<text-board
+		id=":tb1"
+		text="@string/widget_power"/>
+
+	<text-board
+		id=":tb2"
+		expr="%POW_LT" />
+</moom>

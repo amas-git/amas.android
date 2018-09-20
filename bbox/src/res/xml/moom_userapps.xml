@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	include="moom_base_led"
+	name="sdcard"
+	size="60x60"
+	bg="@drawable/oo"
+	tag=":apps"
+	zoom="0.7">
+	<text-board
+		id=":t1"
+		expr="(format :apps.userapps.number)"
+		color="#32CD32"
+		text="0" />
+	<text-board
+		id=":t2"
+		text="@string/userapps"
+		color="#32CD32" />
+</moom>

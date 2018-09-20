@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	include="moom_base_3"
+	tag=":power"
+	name="指针电量表"
+	bg="@drawable/hex_bg"
+	bg-margin="0.1"
+	zoom="0.6">
+
+	<text-board
+		id="1"
+		drawRect="%,0,0,0.5,0.2"
+		textSize="50" 
+		color="yellow"
+		text="@string/widget_power" />
+
+	<arc-scale
+		id="2"
+		drawRect="0,0,400,400"
+		color="#D9B300" />
+
+	<text-board
+		id="3"
+		drawRect="%,0.5,0.5,1,1"
+		textSize="55" 
+		expr="%POW_LT"
+		color="yellow" 
+		text="100%"/>
+	<hand
+		id="4"
+		drawRect="0,0,400,400"
+		expr="%POW_LP"
+		src="@drawable/pr" />
+	<image
+		margin="-40"
+		src="@drawable/b56" />
+</moom>

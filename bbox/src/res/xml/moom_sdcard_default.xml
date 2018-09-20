@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	include="moom_base_small"
+	name="sdcard"
+	zoom="0.7"
+	size="60x60"
+	tag=":fs.sdcard">
+	<arc-stroke
+		id=":as0"
+		color="#FFA500"
+		alpha="80" />
+
+	<arc-stroke
+		id=":as1"
+		expr="%DISK_UP"
+		color="#FFFF93"
+		alpha="90" />
+
+	<arc-stroke
+		id=":as2"
+		expr="%DISK_UP"
+		color="yellow" />
+
+	<text-board
+		id=":tp"
+		tag=":cpu.usage.total"
+		color="#FFA500"
+		expr="%DISK_UPT" />
+
+	<text-board
+		id=":tt"
+		text="@string/storage"
+		color="#FFA500"
+		alpha="180" />
+	<map
+		key=":status.mounted">
+		<image
+			tag="false"
+			margin="10"
+			src="@drawable/not_avail" />
+	</map>
+</moom>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/background_light"
+    android:minHeight="80sp"
+    android:orientation="horizontal" >
+
+    <ListView
+        android:id="@+id/done_list"
+        android:layout_width="fill_parent"
+        android:layout_height="200sp"
+        android:background="@android:color/background_light"
+        android:clickable="false"
+        android:drawSelectorOnTop="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:longClickable="false"
+        android:transcriptMode="normal" />
+
+</LinearLayout>

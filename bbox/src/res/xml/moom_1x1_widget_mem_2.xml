@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	include="moom_1x1_widget_base_2"
+	tag=":memory" >
+	<arc-stroke
+		id=":as1"
+		expr="%MEM_PERCENT"/>
+
+	<arc-stroke
+		id=":as2"
+		expr="%MEM_PERCENT"/>
+
+	<text-board
+		id=":tp"
+		expr="%MEM_USED" />
+
+	<text-board
+		id=":tt"
+		text="@string/notif_memory"/>
+</moom>

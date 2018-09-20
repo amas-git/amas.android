@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<moom
+	include="moom_base_1"
+	size="200x200"
+	tag=":power"
+	name="嫩粉色儿电量表" 
+	zoom="0.9">
+	<arc-stroke
+		id="1"
+		color="#FFC0CB" />
+	<arc-stroke
+		id="2"
+		expr="%POW_LP"
+		color="#FFC0CB" />
+	<arc-stroke
+		id="3"
+		expr="%POW_LP"
+		color="#FFC0CB" />
+	<arc-stroke
+		id="4"
+		tag=":power.level"
+		expr="%POW_LP"
+		color="#FFC0CB" />
+	<arc-stroke
+		id="5"
+		expr="%POW_LP"
+		color="#FFC0CB" />
+	<arc-stroke
+		id="6"
+		expr="%POW_LP"
+		color="#FFC0CB" />
+	<arc-stroke
+		id="7"
+		expr="%POW_LP"
+		color="#FFC0CB" />
+	<text-board
+		id="8"
+		expr="%POW_LT"
+		color="#FFC0CB"
+		font="assets:///r2014.ttf"
+		text="100%"  />
+</moom>

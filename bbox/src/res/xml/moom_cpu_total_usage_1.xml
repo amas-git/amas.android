@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+    size="200x200"
+    tag=":cpu">
+
+    <text-board
+        margin="%,0.35,0.25,0.65,0.5"
+        text="@string/cpu_usage"
+        static="true"
+        textSize="20"
+		align="left"
+        alpha="255"
+        color="#009100"  />
+    
+    <arc-scale
+        margin="13"
+        startAngle="351"
+        sweepAngle="54"
+        scaleLength="12"
+        scaleText="false"
+        mainScaleLineOffset="-18"
+        scaleInterval="10"
+        scaleWidth="2"
+        maxScale="20"
+        enableDrawMainScale="true"
+        color="red" />
+    
+    <arc-scale
+        margin="13"
+        startAngle="135"
+        sweepAngle="216"
+        scaleLength="12"
+        scaleText="false"
+        mainScaleLineOffset="-18"
+        scaleInterval="10"
+        scaleWidth="2"
+        maxScale="80"
+        enableDrawMainScale="true"
+        color="green" />
+
+    <text-board
+        margin="%,0,0.5,0,0"
+        expr="%CPU_UPT"
+        static="false"
+        textSize="30"
+        alpha="255"
+        color="green"
+        font="assets:///led.ttf" />
+
+    <hand
+        scaled="true"
+        expr="%CPU_UP"
+        drawRect="%,0.1,0.1,0.9,0.9"
+        startAngle="135"
+        sweepAngle="270"
+        static="false"
+        src="@drawable/pw"
+        color="green"
+        alpha="150" />
+</moom>

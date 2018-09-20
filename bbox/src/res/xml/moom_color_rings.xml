@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+    size="200x200"
+    tag=":memory">
+    
+	<text-board
+        margin="%,1,0.8,1,1"
+		textSize="20"
+		static="true"
+		align="center"
+		color="#F8F8F8" 
+		text="@string/widget_memory"
+        font="assets:///r2014.ttf"  />
+    
+    <arc-scale
+        margin="15"
+        startAngle="135"
+        sweepAngle="270"
+        scaleLength="10"
+        mainScaleLineOffset="-15"
+        scaleTextPadding="-15"
+        scaleInterval="10"
+        scaleTextColor="cyan"
+        scaleWidth="2"
+        scaleTextSize="12"
+        maxScale="100"
+        enableDrawMainScale="true"
+        scaleTextFont="assets:///r2014.ttf"
+        color="cyan" />
+    <arc-stroke
+        expr="(percent :memory.used.percent)"
+        static="false"
+        margin="45"
+        startAngle="135"
+        sweepAngle="270"
+        strokeWidth="7"
+        color="green"
+        alpha="150" />
+    <arc-stroke
+        expr="(percent :memory.used.percent)"
+        static="false"
+        margin="25"
+        startAngle="135"
+        sweepAngle="270"
+        strokeWidth="2"
+        color="cyan"
+        alpha="150" />
+    <text-board
+        margin="%,0,0.5,0,0"
+        expr="(format :memory.used.percent %)"
+        static="false"
+        textSize="20"
+        alpha="255"
+        color="#F8F8F8"
+        font="assets:///r2014.ttf"
+        text="50%" />
+    <text-board
+        margin="%,0,0,0,0.25"
+        tag="$KILLED_COUNTER"
+        static="false"
+        textSize="10"
+        alpha="255"
+        color="#F8F8F8"
+        font="assets:///r2014.ttf" />
+    <hand
+        expr="(percent :memory.used.percent)"
+        drawRect="%,0.3,0.3,0.7,0.7"
+        startAngle="135"
+        sweepAngle="270"
+        static="false"
+        src="@drawable/pointer"
+        color="green"
+        alpha="150" />
+</moom>

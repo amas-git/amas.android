@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	include="moom_base_8"
+	tag=":power"
+	name="下午三点半电池"
+    bg="@drawable/b55"
+    zoom="0.8">
+	<arc-scale
+		id="1"
+		scaleTextColor="red"
+		scaleTextFont="assets:///r2014.ttf"
+		color="red" />
+	<arc-stroke
+		id="2"
+		color="red"
+		alpha="200" />
+	<arc-stroke
+		id="3"
+		expr="%POW_LP"
+		color="yellow" />
+	<text-board
+		id=":t"
+		expr="%POW_LT"
+		color="red"
+		font="assets:///r2014.ttf" />
+	<hand
+		id=":h"
+		expr="%POW_LP"
+		src="@drawable/star"
+		zoom="0.65"/>
+</moom>

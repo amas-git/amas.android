@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+    include="moom_base_cpu_useage"
+    tag=":cpu"
+    name="CPU2使用率">
+    <arc-stroke
+        id="3"
+        expr="%CPU2_UP"/>
+    
+	<text-board
+		id="seq"
+		text="2" />
+</moom>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	include="moom_base_2"
+	tag=":power"
+	name="四分之三电量表"
+    bg="@drawable/dashlight"
+    zoom="0.8">
+
+	<arc-stroke
+		id="1"
+		color="black"
+		alpha="120" />
+	<arc-scale
+		id="2"
+		scaleTextColor="green"
+		scaleTextFont="assets:///r2014.ttf"
+		color="cyan" />
+	<text-board
+		id="3"
+		expr="%POW_LT"
+		font="assets:///led.ttf"
+		color="green" 
+		text="100%"/>
+	<text-board
+		id="4"
+		text="@string/widget_power"
+		color="green" />
+	<hand
+		id="5"
+		expr="%POW_LP"
+		src="@drawable/p51" />
+</moom>

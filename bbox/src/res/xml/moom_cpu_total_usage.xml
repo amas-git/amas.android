@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	include="moom_base_small"
+	size="60x60"
+	zoom="0.7"
+	tag=":cpu"
+	name="CPU使用率">
+	<arc-stroke
+		id=":as0"
+		color="red"
+		alpha="80" />
+		
+	<arc-stroke
+		id=":as1"
+		color="#EA0000"
+		alpha="100"
+		expr="(percent :cpu.usage.total)" />
+
+	<arc-stroke
+		id=":as2"
+		color="red"
+		expr="(percent :cpu.usage.total)" />
+
+	<text-board
+		id=":tp"
+		color="red"
+		expr="(format :cpu.usage.total %)" />
+
+	<text-board
+		id=":tt"
+		color="red"
+		alpha="180"
+		text="CPU" />
+</moom>

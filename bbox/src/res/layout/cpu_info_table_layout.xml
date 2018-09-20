@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/cpu_info_layout"
+	android:layout_width="fill_parent"
+	android:layout_height="150dp"
+	android:orientation="vertical" 
+	android:background="@drawable/nameplate"
+	android:layout_marginLeft="15dp"
+	android:layout_marginRight="15dp" >
+	
+	<TextView
+        android:id="@+id/cpu_name"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#E4E4E4" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="#000000" />
+	       
+    <TableLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >　
+        <TableRow>
+	        <TextView   
+				android:id="@+id/cpu_max_freq_title"
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_weight="1"
+				android:gravity="center"
+				android:textColor="#E4E4E4"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:text="@string/cpu_max_frequency"/>
+	        
+	        <View
+	            android:layout_width="2dip"
+	            android:layout_height="fill_parent"
+	            android:background="#000000" />
+
+	        <TextView   
+				android:id="@+id/cpu_max_freq_value"
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:gravity="center"
+				android:textColor="#E4E4E4"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_weight="1"/>        　      
+        </TableRow>　
+    </TableLayout>
+    
+    <View
+		android:layout_width="fill_parent"
+		android:layout_height="2dip"
+		android:background="#000000" />
+    
+    <TableLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >　
+        <TableRow>
+	        <TextView   
+				android:id="@+id/cpu_min_freq_title"
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_weight="1"
+				android:gravity="center"
+				android:textColor="#E4E4E4"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:text="@string/cpu_min_frequency"/>
+	        
+	        <View
+	            android:layout_width="2dip"
+	            android:layout_height="fill_parent"
+	            android:background="#000000" />
+
+	        <TextView   
+				android:id="@+id/cpu_min_freq_value"
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:gravity="center"
+				android:textColor="#E4E4E4"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_weight="1"/>        　      
+	           
+        </TableRow>　
+    </TableLayout>
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="#000000" />
+       
+    <TableLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >　
+        <TableRow>
+	        <TextView   
+				android:id="@+id/cpu_cur_freq_title"
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_weight="1"
+				android:textColor="#E4E4E4"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:text="@string/cpu_cur_frequency"
+				android:gravity="center"/>
+	        
+	        <View
+	            android:layout_width="2dip"
+                android:layout_height="fill_parent"
+                android:background="#000000" />
+
+	        <TextView   
+				android:id="@+id/cpu_cur_freq_value"
+				android:layout_width="0dp"
+				android:layout_height="fill_parent"
+				android:layout_weight="1"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:gravity="center"/>        　      
+        </TableRow>　
+    </TableLayout>
+</LinearLayout>

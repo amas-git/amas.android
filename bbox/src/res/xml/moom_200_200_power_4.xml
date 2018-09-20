@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	include="moom_base_4"
+	tag=":power"
+	name="二段颜色的电量表"
+    bg="@drawable/dashlight"
+    zoom="0.85">
+
+	<arc-stroke
+		id="0"
+		color="black"
+		alpha="120" />
+	<text-board
+		id="1"
+		text="@string/widget_power"
+		color="green"
+		alpha="255" />
+	<arc-scale
+		id="2"
+		color="red" />
+	<arc-scale
+		id="3"
+		color="green" />
+	<text-board
+		id=":t"
+		expr="%POW_LT"
+		color="green"
+		font="assets:///led.ttf"
+		text="100%" />
+	<hand
+		id=":h"
+		expr="%POW_LP"
+		drawRect="%,0.1,0.1,0.9,0.9"
+		src="@drawable/pw" />
+</moom>

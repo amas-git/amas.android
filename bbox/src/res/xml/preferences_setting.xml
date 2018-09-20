@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<PreferenceScreen   
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="@string/setting_screen_title_setting">
+	    <CheckBoxPreference   
+	        android:key="pref_key_enable_notification_bar" 
+	        android:title="@string/setting_notification_title"   
+	        android:summaryOn="@string/setting_notification_on"  
+	        android:summaryOff="@string/setting_notification_off"    
+	        android:defaultValue="true" />
+	    
+	    <Preference   
+	        android:key="pref_key_set_notification_bar_style" 
+        	android:dependency="pref_key_enable_notification_bar"
+	        android:title="@string/setting_set_notification_bar_style"
+	        android:summary="@string/setting_summary_set_notification_bar_style"  />
+	    
+	    <ListPreference 
+			android:key="pref_key_temperature_unit"
+	        android:title="@string/choose_temp_unit_title"  
+	        android:entries="@array/temperature_unit"
+			android:entryValues="@array/temperature_unit_value" 
+			android:dialogTitle="@string/choose_temp_unit_dialog_title">
+		</ListPreference>
+	
+	</PreferenceCategory> 
+     
+    <PreferenceCategory android:title="@string/setting_screen_title_support">
+	    <Preference   
+	        android:key="pref_key_ad_wall" 
+	        android:title="@string/setting_adwall_title"  />
+	    
+	    <Preference   
+	        android:key="pref_key_feedback" 
+	        android:title="@string/setting_feedback_title" />  
+	</PreferenceCategory> 
+</PreferenceScreen> 

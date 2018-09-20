@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:whitetree="http://schemas.android.com/apk/res/lab.whitetree.bonny.box"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:scrollbars="none"
+	android:background="@drawable/activity_bg">
+	    
+    <RelativeLayout
+		android:id="@+id/root"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical">
+		
+		<lab.whitetree.bonny.box.ui.MoomCellLayout
+			android:id="@+id/moom_cell_layout_0"
+			android:tag="MoomCellLayout_0"
+			android:layout_width="260dp"
+			android:layout_height="260dp"
+			android:layout_gravity="center"
+			android:layout_marginTop="24dp"
+			android:layout_centerHorizontal="true"
+			android:clickable="true"
+		    />
+			
+		<LinearLayout
+			android:id="@+id/panel_1"
+			android:orientation="horizontal"
+			android:layout_below="@id/moom_cell_layout_0"
+			android:layout_centerHorizontal="true"
+			android:gravity="center"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<lab.whitetree.bonny.box.ui.MoomCellLayout
+				android:id="@+id/moom_cell_layout_1"
+				android:tag="MoomCellLayout_1"
+				android:layout_width="100dp"
+				android:layout_height="100dp"
+				android:clickable="true"
+			    />
+
+			<lab.whitetree.bonny.box.ui.MoomCellLayout
+				android:id="@+id/moom_cell_layout_2"
+				android:tag="MoomCellLayout_2"
+				android:layout_width="100dp"
+				android:layout_height="100dp"
+				android:clickable="true"
+			    />
+
+			<lab.whitetree.bonny.box.ui.MoomCellLayout
+				android:id="@+id/moom_cell_layout_3"
+				android:tag="MoomCellLayout_3"
+				android:layout_width="100dp"
+				android:layout_height="100dp"
+				android:clickable="true"
+			    />
+		</LinearLayout>
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_below="@id/panel_1"
+			android:layout_centerHorizontal="true"
+			android:gravity="center"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<lab.whitetree.bonny.box.ui.MoomCellLayout
+				android:id="@+id/moom_cell_layout_4"
+				android:tag="MoomCellLayout_4"
+				android:layout_width="100dp"
+				android:layout_height="100dp"
+				android:layout_gravity="left|center_horizontal"
+				android:clickable="true"
+			    />
+			
+			<lab.whitetree.bonny.box.ui.MoomCellLayout
+				android:id="@+id/moom_cell_layout_5"
+				android:tag="MoomCellLayout_5"
+				android:layout_width="100dp"
+				android:layout_height="100dp"
+				android:layout_gravity="left|center_horizontal"
+				android:clickable="true"
+			    />
+			<lab.whitetree.bonny.box.ui.MoomCellLayout
+				android:id="@+id/moom_cell_layout_6"
+				android:tag="MoomCellLayout_6"
+				android:layout_width="100dp"
+				android:layout_height="100dp"
+				android:clickable="true"
+			    />
+		</LinearLayout>
+		<org.whitetree.bidget.moom.MoomView
+			android:visibility="gone"
+			android:id="@+id/test"
+			android:background="@drawable/b23"
+			android:onClick="gotoHell"
+			whitetree:zoom="0.7"
+			android:layout_width="100dp"
+			android:layout_height="100dp"
+			whitetree:configure="res:///moom_demo_circle_text" />
+		
+		<ImageView
+			android:id="@+id/btn_setting"
+			android:background="@drawable/btn_setting"
+			android:layout_alignParentRight="true"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			android:layout_marginRight="8dp"
+			android:onClick="onClickSetting" />
+		
+		<ImageView
+			android:id="@+id/btn_edit"
+			android:background="@drawable/btn_edit"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentTop="true"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_marginTop="8dp"
+			android:layout_marginLeft="8dp"
+			android:onClick="onClickEditMode" />
+
+	</RelativeLayout>
+</ScrollView>

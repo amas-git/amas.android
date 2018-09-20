@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:whitetree="http://schemas.android.com/apk/res/lab.whitetree.bonny.box"
+    android:id="@+id/sub_cpu_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:gravity="center"
+	android:background="#242424" >
+
+    <LinearLayout
+        android:id="@+id/layout_0"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <org.whitetree.bidget.moom.MoomView
+            android:id="@+id/cpu_usage_0"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:tag=":cpu"
+            whitetree:configure="res:///moom_cpu_usage_cpu0"
+            whitetree:zoom="0.8" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_1"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <org.whitetree.bidget.moom.MoomView
+            android:id="@+id/cpu_usage_1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:tag=":cpu"
+            whitetree:configure="res:///moom_cpu_usage_cpu1"
+            whitetree:zoom="0.8" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_2"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <org.whitetree.bidget.moom.MoomView
+            android:id="@+id/cpu_usage_2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:tag=":cpu"
+            whitetree:configure="res:///moom_cpu_usage_cpu2"
+            whitetree:zoom="0.8" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_3"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <org.whitetree.bidget.moom.MoomView
+            android:id="@+id/cpu_usage_3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:tag=":cpu"
+            whitetree:configure="res:///moom_cpu_usage_cpu3"
+            whitetree:zoom="0.8" />
+    </LinearLayout>
+
+</LinearLayout>

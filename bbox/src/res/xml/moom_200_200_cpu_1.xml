@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<moom
+	include="moom_base_1"
+	tag=":cpu"
+	name="嫩粉色儿CPU" 
+	zoom="0.9">
+	<arc-stroke
+		id="1"
+		color="#FFC0CB"
+		expr="%CPU_UP" />
+	<arc-stroke
+		id="2"
+		color="#FFC0CB"
+		expr="%CPU_UP" />
+	<arc-stroke
+		id="3"
+		color="#FFC0CB"
+		expr="%CPU_UP" />
+	<arc-stroke
+		id="4"
+		color="#FFC0CB"
+		expr="%CPU_UP" />
+	<arc-stroke
+		id="5"
+		color="#FFC0CB"
+		expr="%CPU_UP" />
+	<arc-stroke
+		id="6"
+		color="#FFC0CB"
+		expr="%CPU_UP" />
+	<arc-stroke
+		id="7"
+		color="#FFC0CB"
+		expr="%CPU_UP" />
+	<text-board
+		id="8"
+		color="#FFC0CB"
+		font="assets:///r2014.ttf"
+		expr="%CPU_UPT" 
+		text="100%" />
+</moom>

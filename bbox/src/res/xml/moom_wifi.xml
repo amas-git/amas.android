@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom 
+    name="移动网络"
+    size="60x60"
+    tag=":wifi"
+	bg="@drawable/oo"
+	zoom="0.7">
+    
+    <!-- wifi信号图表中，灰色的部分 -->
+	<arc-stroke
+		drawRect="-10,0,70,80"
+		startAngle="225"
+		sweepAngle="90"
+		strokeWidth="6"
+		color="#353D4A"/>
+	
+    <!-- wifi信号图表中，绿色信号部分 -->
+	<map
+		key=":wifi.rssi.level.4">
+		<arc-stroke
+		    tag="true"
+			drawRect="-10,0,70,80"
+			startAngle="225"
+			sweepAngle="90" 
+			strokeWidth="6"
+			color="green"/>
+	</map>
+	
+    <!-- wifi信号图表中，灰色的部分 -->
+	<arc-stroke
+		drawRect="2,12,58,68"
+		startAngle="225"
+		sweepAngle="90"
+		strokeWidth="6"
+		color="#353D4A"/>
+	
+    <!-- wifi信号图表中，绿色信号部分 -->
+	<map
+		key=":wifi.rssi.level.3">
+		<arc-stroke
+		    tag="true"
+			drawRect="2,12,58,68"
+			startAngle="225"
+			sweepAngle="90"
+			strokeWidth="6"
+			color="green"/>
+	</map>
+	
+    <!-- wifi信号图表中，灰色的部分 -->
+	<arc-stroke
+		drawRect="14,24,46,56"
+		startAngle="225"
+		sweepAngle="90"
+		strokeWidth="6"
+		color="#353D4A"/>
+	
+    <!-- wifi信号图表中，绿色信号部分 -->
+	<map
+		key=":wifi.rssi.level.2">
+		<arc-stroke
+		    tag="true"
+			drawRect="14,24,46,56"
+			startAngle="225"
+			sweepAngle="90"
+			strokeWidth="6"
+			color="green"/>
+	</map>
+	
+    <!-- wifi信号图表中，灰色的部分 -->
+	<arc-stroke
+		drawRect="24,35,36,70"
+		startAngle="225"
+		sweepAngle="90"
+		strokeWidth="6"
+		color="#353D4A"/>
+	
+    <!-- wifi信号图表中，绿色信号部分 -->
+	<map
+		key=":wifi.rssi.level.1">
+		<arc-stroke
+		    tag="true"
+			drawRect="24,35,36,70"
+			startAngle="225"
+			sweepAngle="90"
+			strokeWidth="6"
+			color="green"/>
+	</map>
+	
+    <!-- 没信号的时候 -->
+	<map
+		key=":wifi.off">
+		<arc-stroke
+		    tag="true"
+			drawRect="2,12,58,68"
+			startAngle="225"
+			sweepAngle="90"
+			strokeWidth="38"
+			color="#353D4A"/>
+	</map>
+	
+	<!-- wifi打开时 显示on -->
+	<map
+		key=":wifi.on">
+		<text-board
+		    tag="true"
+			drawRect="%,0,0.8,1,0.9"
+			textSize="10"
+			color="green"
+			alpha="200"
+			align="center"
+			text="ON" />
+	</map>
+	
+	<!-- wifi关闭时 显示off -->
+	<map
+		key=":wifi.off">
+		<text-board
+		    tag="true"
+			drawRect="%,0,0.8,1,0.9"
+			textSize="10"
+			color="green"
+			alpha="200"
+			align="center"
+			text="OFF" />
+	</map>
+</moom>

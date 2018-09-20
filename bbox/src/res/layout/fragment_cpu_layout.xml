@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:whitetree="http://schemas.android.com/apk/res/lab.whitetree.bonny.box"
+	android:id="@+id/layout"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/activity_bg">
+
+	<TextView
+		android:id="@+id/cpu_test_result"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" />
+
+
+	<FrameLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical">
+		<ScrollView
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:scrollbars="none">
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:orientation="vertical">
+
+				<include
+					layout="@layout/sub_cpu_usage_layout" />
+
+				<org.whitetree.bidget.moom.MoomView
+					android:id="@+id/cpu_totaluse"
+					android:layout_gravity="center_horizontal"
+					android:layout_width="260dp"
+					android:layout_height="260dp"
+					android:background="@drawable/b23"
+					android:tag=":cpu"
+					whitetree:configure="res:///moom_cpu_total_usage_1"
+					whitetree:zoom="0.8" />
+
+				<LinearLayout
+					android:id="@+id/cpu_meter_layout"
+					android:layout_width="fill_parent"
+					android:layout_height="150dp"
+					android:gravity="center"
+					android:orientation="horizontal">
+
+					<org.whitetree.bidget.moom.MoomView
+						android:id="@+id/cpu_cur_frequence"
+						android:layout_width="150dp"
+						android:layout_height="150dp"
+						android:layout_gravity="center"
+						android:background="@drawable/dashboard_1"
+						android:tag=":cpu"
+						whitetree:configure="res:///moom_cpu_cur_freq"
+						whitetree:zoom="0.7" />
+
+					<org.whitetree.bidget.moom.MoomView
+						android:id="@+id/cpu_temp"
+						android:layout_width="150dp"
+						android:layout_height="150dp"
+						android:layout_gravity="center"
+						android:background="@drawable/dashboard_1"
+						android:tag=":sensor.temp"
+						whitetree:configure="res:///moom_cpu_temp"
+						whitetree:zoom="0.7" />
+				</LinearLayout>
+
+				<include
+					layout="@layout/cpu_info_table_layout" />
+
+				<View
+					android:layout_width="fill_parent"
+					android:layout_height="45dp" />
+			</LinearLayout>
+
+		</ScrollView>
+
+		<Button
+			android:id="@+id/cpu_test"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/btn_0"
+			android:paddingTop="10dp"
+			android:textColor="#FFF"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:text="@string/test_cpu_performance"
+			android:layout_gravity="center_horizontal|bottom" />
+	</FrameLayout>
+</FrameLayout>

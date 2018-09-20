@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	include="moom_base_small"
+	zoom="0.7"
+	size="60x60"
+	tag=":memory">
+	<arc-stroke
+		id=":as0"
+		color="#28FF28"
+		alpha="80" />
+
+	<arc-stroke
+		id=":as1"
+		expr="%MEM_PERCENT"
+		color="green"
+		alpha="90" />
+
+	<arc-stroke
+		id=":as2"
+		expr="%MEM_PERCENT"
+		color="green" />
+
+	<text-board
+		id=":tp"
+		color="green"
+		expr="%MEM_USED" />
+
+	<text-board
+		id=":tt"
+		text="@string/notif_memory"
+		color="green"/>
+</moom>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+    name="1X1widget用纯文字"
+	size="200x200">
+	<text-board
+		id=":tb1"
+		drawRect="%,0,0.15,0.7,0.4"
+		static="true"
+		textSize="55"
+		color="green"
+		align="center" />
+
+	<text-board
+		id=":tb2"
+		drawRect="%,0.2,0.4,1,1"
+		static="false"
+		textSize="60"
+		color="green"
+		align="center"
+		font="assets:///led.ttf"
+		text="100%"  />
+</moom>

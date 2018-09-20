@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	include="moom_base_small"
+	size="60x60"
+	zoom="0.7"
+	tag=":memory"
+	name="内存使用率">
+	<arc-stroke
+		id=":as0"
+		color="#CA8EFF"
+		alpha="80" />
+		
+	<arc-stroke
+		id=":as1"
+		color="#8600FF"
+		alpha="100"
+		expr="%MEM_PERCENT"/>
+
+	<arc-stroke
+		id=":as2"
+		color="#D200D2"
+		expr="%MEM_PERCENT" />
+
+	<text-board
+		id=":tp"
+		color="#CA8EFF"
+		expr="%MEM_USED"
+		text="100%" />
+
+	<text-board
+		id=":tt"
+		color="#CA8EFF"
+		alpha="180"
+		text="@string/widget_memory"  />
+</moom>

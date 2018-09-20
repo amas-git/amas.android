@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	size="200x200"
+	zoom="0.9"
+	tag=":memory">
+	<arc-stroke
+		static="false"
+		margin="40"
+		startAngle="180"
+		sweepAngle="360"
+		strokeWidth="90"
+		color="#FFD700"
+		alpha="220" />
+	<arc-scale
+		margin="0"
+		startAngle="180"
+		sweepAngle="180"
+		scaleLength="10"
+		mainScaleLineOffset="10"
+		scaleTextPadding="15"
+		scaleInterval="10"
+		scaleTextColor="black"
+		scaleWidth="1.5"
+		scaleTextSize="8"
+		maxScale="100"
+		enableDrawMainScale="true"
+		scaleTextFont="assets:///r2014.ttf"
+		color="black" />
+
+	<hand
+		expr="(percent :memory.used.percent)"
+		margin="1"
+		startAngle="180"
+		sweepAngle="180"
+		static="false"
+		src="@drawable/rock"
+		alpha="255" />
+	<image
+		drawRect="10,15,190,215"
+		src="@drawable/sun" />
+</moom>

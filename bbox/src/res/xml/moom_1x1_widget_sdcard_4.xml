@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	include="moom_1x1_widget_base_4"
+	tag=":fs.sdcard" >
+
+ 	<text-board
+ 	    id="1"
+		text="@string/widget_sdcard"
+		color="yellow"/>
+ 	
+ 	<arc-scale
+ 	    id="2"
+		color="#D9B300"  />
+	
+ 	<text-board
+ 	    id="3"
+		expr="%DISK_UPT"
+		color="yellow" />
+	
+	<hand
+ 	    id="4"
+		expr="%DISK_UP"
+		src="@drawable/pr" />
+	
+</moom>

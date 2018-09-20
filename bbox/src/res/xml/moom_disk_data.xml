@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	include="moom_base_disk"
+	tag=":fs.data"
+	name="默认的电池仪表.DATA">
+	<text-board
+		id=":t"
+		text="@string/data" />
+</moom>

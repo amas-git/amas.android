@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	size="200x200"
+	tag=":sensor.temp"
+	name="CPU温度"
+	clockwise="false">
+	
+ 	<text-board
+		drawRect="%,0.7,0,0.85,0.1"
+		textSize="25"
+		alpha="255"
+		static="true"
+		align="left"
+		color="white"
+		text="@string/cpu_temp" />
+ 	
+ 	<arc-scale
+		drawRect="10,-190,190,390"
+		startAngle="0"
+		sweepAngle="90"
+		scaleLength="25"
+		mainScaleLineOffset="-40"
+		scaleText="false"
+		scaleInterval="5"
+		scaleWidth="2"
+		maxScale="50"
+		enableDrawMainScale="true"
+		color="#FFFFFF" />
+	
+ 	<text-board
+		drawRect="%,0,0.6,0.4,1"
+		expr="(format :sensor.temp.value)"
+		textSize="30"
+		alpha="255"
+		static="false"
+		align="center"
+		color="#E4E4E4" 
+		text="0"/>
+	
+	<hand
+		drawRect="-190,10,190,390"
+		expr="(percent :sensor.temp.percent)"
+		startAngle="270"
+		sweepAngle="90"
+		scaled="true"
+		static="false"
+		src="@drawable/vpointer"
+		alpha="150" />
+</moom>

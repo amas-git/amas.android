@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:whitetree="http://schemas.android.com/apk/res/lab.whitetree.bonny.box"
+	android:layout_width="fill_parent"
+	android:background="#FFF"
+	android:layout_height="fill_parent">
+	<org.whitetree.bidget.OilBottleView
+		android:id="@+id/image"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" />
+	<LinearLayout
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="10dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		<org.whitetree.bidget.moom.MoomView
+			android:tag=":power"
+			android:id="@+id/power_voltage"
+			android:layout_width="160dp"
+			android:layout_height="160dp"
+			android:background="@drawable/b55"
+			whitetree:zoom="0.8"
+			whitetree:configure="res:///moom_power_voltage" />
+		<org.whitetree.bidget.moom.MoomView
+			android:tag=":power"
+			android:id="@+id/power_temp"
+			android:layout_width="160dp"
+			android:layout_height="160dp"
+			android:layout_centerHorizontal="true"
+			android:background="@drawable/b55"
+			whitetree:zoom="0.8"
+			whitetree:configure="res:///moom_power_temp" />
+	</LinearLayout>
+	<TextView
+		android:id="@+id/textboard"
+		android:visibility="gone"
+		android:background="@drawable/cell"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:layout_gravity="center"
+		android:textSize="28sp"
+		android:textStyle="bold"
+		android:textColor="#000"
+		android:shadowDx="2"
+		android:shadowDy="2"
+		android:shadowColor="#C0C0C0"
+		android:shadowRadius="3"
+		android:gravity="center"
+		android:text="0%" />
+
+
+	<org.whitetree.bidget.CellLayout
+		android:id="@+id/signal"
+		android:background="@null"
+		android:layout_width="fill_parent"
+		android:layout_marginTop="60dp"
+		android:layout_gravity="top|center_horizontal"
+		android:layout_height="wrap_content">
+		<ImageView
+			android:id="@+id/center"
+			android:background="@drawable/level"
+			android:clickable="true"
+			android:layout_width="54dp"
+			android:layout_height="wrap_content" />
+		<TextView
+		    android:id="@+id/level"
+			android:clickable="true"
+			android:text="100%"
+			android:background="@null"
+			android:gravity="center"
+			android:textSize="18sp"
+			android:paddingTop="18dp"
+			android:textStyle="bold"
+			android:textColor="#000"
+			android:shadowDx="2"
+			android:shadowDy="2"
+			android:shadowColor="#C0C0C0"
+			android:shadowRadius="3"
+			android:layout_width="54dp"
+			android:layout_height="wrap_content" />
+
+        <!-- 过热  -->
+		<ImageView
+			android:id="@+id/overheat"
+			android:background="@drawable/signal_light"
+			android:clickable="true"
+			android:padding="12dp"
+			android:src="@drawable/sig_overheat"
+			android:layout_width="54dp"
+			whitetree:layout_to="@id/center"
+			android:tag="health/overheat"
+			android:onClick="onClickOverheat"
+			whitetree:layout_dir="E"
+			android:layout_height="wrap_content" />
+		<!-- 电压过高  -->
+		<ImageView
+		    android:id="@+id/overv"
+			android:background="@drawable/signal_light"
+			android:clickable="true"
+			android:padding="12dp"
+			android:src="@drawable/sig_overv"
+			android:layout_width="54dp"
+			whitetree:layout_to="@id/center"
+			android:tag="health/overvoltage"
+			android:onClick="onClickOvervoltage"
+			whitetree:layout_dir="W"
+			android:layout_height="wrap_content" />
+			
+		<!-- 完全没电  -->
+		<ImageView
+		    android:id="@+id/overv"
+			android:background="@drawable/signal_light"
+			android:clickable="true"
+			android:layout_width="54dp"
+			android:padding="12dp"
+			android:src="@drawable/sig_dead"
+			android:tag="health/dead"
+			whitetree:layout_to="@id/center"
+			android:onClick="onClickDead"
+			whitetree:layout_dir="SW"
+			android:layout_height="wrap_content" />
+			
+		<!-- 电池状态未知  -->
+		<ImageView
+			android:id="@+id/power_unknown"
+			android:background="@drawable/signal_light"
+			android:clickable="true"
+			android:layout_width="54dp"
+			android:tag="health/unknown"
+			android:padding="12dp"
+			android:src="@drawable/sig_unknown"
+			whitetree:layout_to="@id/center"
+			android:onClick="onClickUnknown"
+			whitetree:layout_dir="SE"
+			android:layout_height="wrap_content" />
+
+		<!-- 电池状态良好 -->
+		<ImageView
+		   
+		    android:id="@+id/good"
+			android:background="@drawable/signal_light"
+			android:clickable="true"
+			android:layout_width="54dp"
+			android:padding="10dp"
+            android:src="@drawable/sig_good"
+            android:tag="health/good"
+            android:onClick="onClickGood"
+			whitetree:layout_to="@id/power_unknown"
+			whitetree:layout_dir="SW"
+			android:layout_height="wrap_content" />
+
+
+        <!-- 电池状态: ac -->
+        <ImageView
+            android:id="@+id/plugged_ac"
+            android:background="@drawable/signal_light"
+            android:clickable="true"
+            android:layout_width="54dp"
+            android:padding="12dp"
+            android:src="@drawable/sig_ac"
+            android:onClick="onClickAc"
+            whitetree:layout_to="@id/center"
+            android:tag="plugged/ac"
+            whitetree:layout_dir="NW"
+            android:layout_height="wrap_content" />
+            
+        <!-- 电池状态: usb -->
+		<ImageView
+			android:id="@+id/usb"
+			android:background="@drawable/signal_light"
+			android:clickable="true"
+			android:layout_width="54dp"
+			whitetree:layout_to="@id/center"
+			android:padding="12dp"
+			android:tag="plugged/usb"
+			android:src="@drawable/sig_usb"
+			android:onClick="onClickUsb"
+			whitetree:layout_dir="NE"
+			android:layout_height="wrap_content" />
+			
+		<!-- 电池状态: ac-usb -->
+		<ImageView
+			android:id="@+id/acusb"
+			android:background="@drawable/signal_light"
+			android:clickable="true"
+			android:layout_width="54dp"
+			whitetree:layout_to="@id/usb"
+			android:padding="12dp"
+			android:src="@drawable/sig_acusb"
+			android:onClick="onClickAcUsb"
+			whitetree:layout_dir="E"
+			android:layout_height="wrap_content" />
+			
+		<!-- 电池状态: unplugged -->
+        <ImageView
+            android:id="@+id/unplugged"
+            android:background="@drawable/signal_light"
+            android:clickable="true"
+            android:padding="12dp"
+            android:onClick="onClickUnplugged"
+            android:tag="plugged/unplugged"
+            android:src="@drawable/sig_unplugged"
+            android:layout_width="54dp"
+            whitetree:layout_to="@id/plugged_ac"
+            whitetree:layout_dir="W"
+            android:layout_height="wrap_content" />
+	</org.whitetree.bidget.CellLayout>
+</FrameLayout>

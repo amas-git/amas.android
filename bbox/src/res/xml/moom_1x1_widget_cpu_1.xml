@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	include="moom_1x1_widget_base_1"
+	tag=":cpu"
+	name="1X1纯文字cpu"
+    bg="@drawable/b100"
+    zoom="0.85">
+	<text-board
+		id=":tb1"
+		text="@string/widget_cpu"/>
+
+	<text-board
+		id=":tb2"
+		expr="%CPU_UPT" />
+</moom>

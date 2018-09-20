@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	
+	tag=":memory"
+	size="200x200"
+	zoom="0.65"
+	bg="@drawable/wheel"
+	bg-margin="0">
+	<arc-stroke
+		drawRect="10,120,90,200"
+		startAngle="90"
+		sweepAngle="270"
+		strokeWidth="40"
+		color="#2E8B57" 
+		alpha="100"/>
+	<arc-stroke
+		drawRect="0,110,100,210"
+		static="false"
+		expr="%MEM_PERCENT"
+		startAngle="90"
+		sweepAngle="270"
+		strokeWidth="8"
+		color="blue" />
+	<arc-stroke
+		drawRect="10,120,90,200"
+		static="false"
+		expr="%MEM_PERCENT"
+		startAngle="90"
+		sweepAngle="270"
+		strokeWidth="8"
+		color="blue" />
+	<arc-stroke
+		drawRect="20,130,80,190"
+		static="false"
+		expr="%MEM_PERCENT"
+		startAngle="90"
+		sweepAngle="270"
+		strokeWidth="8"
+		color="blue" />
+	<arc-stroke
+		drawRect="30,140,70,180"
+		static="false"
+		expr="%MEM_PERCENT"
+		startAngle="90"
+		sweepAngle="270"
+		strokeWidth="8"
+		color="blue" />
+	<text-board
+		id=":t"
+		drawRect="140,0,200,40"
+		static="false"
+		textSize="40"
+		font="assets:///led.ttf"
+		color="blue"
+		text="90%" />
+</moom>

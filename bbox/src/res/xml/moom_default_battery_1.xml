@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	include="moom_battery_default" 
+	zoom="0.7">
+
+	<text-board
+		id=":tt"
+		color="cyan" />
+</moom>

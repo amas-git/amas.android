@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	size="200x200"
+	tag=":cpu"
+	name="CPU当前频率">
+	
+ 	<text-board
+		drawRect="%,0.05,0,0.35,0.1"
+		textSize="25"
+		alpha="255"
+		static="true"
+		align="right"
+		color="white"
+		text="@string/cpu_freq" />
+ 	
+	<arc-scale
+		drawRect="10,10,390,390"
+		startAngle="180"
+		sweepAngle="90"
+		scaleLength="20"
+		scaleText="false"
+		mainScaleLineOffset="-40"
+		scaleInterval="5"
+		scaleWidth="5"
+		maxScale="10"
+		enableDrawMainScale="true"
+		color="#E4E4E4" />
+	
+	<text-board
+		drawRect="%,0.6,0.6,1,1"
+		expr="(format :cpu.cur.freq.formatted)"
+		textSize="30"
+		alpha="255"
+		static="false"
+		align="center"
+		color="#E4E4E4" />
+	
+	<hand
+		drawRect="10,10,390,390"
+		expr="(percent :cpu.cur.freq.percent)"
+		startAngle="180"
+		sweepAngle="90"
+		scaled="true"
+		static="false"
+		src="@drawable/vpointer"
+		alpha="150" />
+</moom>
+

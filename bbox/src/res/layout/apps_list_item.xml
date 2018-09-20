@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" 
+    android:id="@+id/item_layout" >
+    
+    <ImageView
+        android:id="@+id/app_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp" />
+     
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >   
+    
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="5"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:singleLine="true" 
+            
+            android:textColor="#FFF"
+            android:shadowColor="#000"
+            android:shadowRadius="0.5"
+            android:shadowDx="2"
+            android:shadowDy="2"/>
+        
+        <TextView
+            android:id="@+id/app_size"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:singleLine="true" />
+        
+    </LinearLayout> 
+        
+   <ImageView
+       android:id="@+id/app_storage_status"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:layout_marginRight="10dp" />
+    
+    <CheckBox 
+        android:id="@+id/select"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:focusable="false"
+        android:layout_marginRight="5dp" 
+        android:button="@drawable/cb_app"
+      />
+        
+</LinearLayout>

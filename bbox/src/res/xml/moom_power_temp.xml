@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	size="200x200"
+	tag=":power">
+	<arc-scale
+		margin="0"
+		startAngle="135"
+		sweepAngle="270"
+		scaleLength="15"
+		mainScaleLineOffset="5"
+		scaleTextPadding="15"
+		scaleInterval="10"
+		scaleTextColor="#8B0000"
+		scaleWidth="2"
+		scaleTextSize="12"
+		maxScale="130"
+		enableDrawMainScale="true"
+		scaleTextFont="assets:///r2014.ttf"
+		color="cyan" />
+	<text-board
+		drawRect="%,0,0.7,1,1"
+		expr="(format :power.temperature)"
+		textSize="24"
+		alpha="255"
+		static="false"
+		align="center"
+		font="assets:///led.ttf"
+		color="#8B0000" />
+	<text-board
+		drawRect="%,0,0,1,0.8"
+		text="@string/power_temp"
+		textSize="18"
+		alpha="255"
+		font="assets:///led.ttf"
+		align="center"
+		color="#8B0000" />
+	<hand
+		drawRect="%,0,0,1,1"
+        expr="(percent :power.temperature.percent)" 
+		startAngle="135"
+		sweepAngle="270"
+		scaled="true"
+		static="false"
+		src="@drawable/p51"/>
+</moom>

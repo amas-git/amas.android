@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	include="moom_sdcard_default">
+
+	<text-board
+		id=":tp"
+		color="yellow"  />
+
+	<text-board
+		id=":tt"
+		color="yellow"  />
+</moom>

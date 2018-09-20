@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+    size="60x60">
+    <arc-stroke
+        static="true"
+        margin="2"
+        startAngle="90"
+        sweepAngle="270"
+        strokeWidth="10"
+        color="#FFA500"
+        alpha="100" />
+    <arc-stroke
+        static="false"
+        expr="%DISK_UP"
+        margin="2"
+        startAngle="90"
+        sweepAngle="270"
+        strokeWidth="8"
+        color="#FFA500"/>
+    <text-board
+        drawRect="%,0,0.5,1,0.5"
+        static="false"
+        expr="%DISK_UPT"
+        textSize="10"
+        align="center"
+        font="assets:///r2014.ttf"
+        color="#FFA500"/>
+    <text-board
+        id=":t"
+        drawRect="%,0.5,0.5,1,1"
+        textSize="7"
+        align="center"
+        color="#FFA500"/>
+</moom>

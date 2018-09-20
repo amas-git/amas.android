@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" 
+	android:id="@+id/root_layout">
+	<TextView
+	    android:layout_marginTop="25dp"
+	    android:gravity="center"
+		android:layout_width="fill_parent"
+		android:text="Choose your style"
+		android:layout_height="wrap_content" />
+	<LinearLayout
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent"
+		android:layout_centerInParent="true"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="70dp"
+			android:orientation="vertical"
+			android:visibility="gone"
+			android:id="@+id/title_layout">
+
+			<lab.whitetree.bonny.box.ui.WidgetChooseTitleLayout
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:id="@+id/widget_title_layout"
+				android:visibility="gone" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="0dp"
+			android:layout_width="fill_parent"
+			android:layout_weight="1">
+			<Gallery
+				android:id="@+id/gallery"
+				android:layout_width="fill_parent"
+				android:alwaysDrawnWithCache="true"
+				android:spacing="5px"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:paddingTop="9dp"
+				android:paddingBottom="9dp" />
+		</LinearLayout>
+	</LinearLayout>
+
+	<Button
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:background="@drawable/btn_0"
+		android:text="@android:string/ok"
+		android:onClick="onClickSave"
+		android:paddingTop="10dp"
+		android:textColor="#FFF"
+		android:minWidth="120dp"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_gravity="center_horizontal|bottom" />
+</FrameLayout>

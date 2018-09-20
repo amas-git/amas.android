@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">BonnyBox</string>
+    <string name="kill_all">Kill all</string>
+    <string name="alert_dialog_ok">OK</string>
+    <string name="alert_dialog_cancel">Cancel</string>
+    <string name="sdcard">SDCard</string>
+	<string name="extsdcard">SDCardEx</string>
+	<string name="test_cpu_performance">CPU Test</string>
+	<string name="cpu_max_frequency">"MAX Frequency"</string>
+	<string name="cpu_min_frequency">"MIN Frequency"</string>
+	<string name="cpu_cur_frequency">"CUR Frequency"</string>
+	<string name="cpu_performance_result">"Time consumed\t: <xliff:g id="name">%.3f</xliff:g> sec(s)\nCPU Score\t: <xliff:g id="name">%.1f</xliff:g>"</string>
+	<string name="cpu_performance_title">"Test results"</string>
+	<string name="sdcardoffline">SD card inaccessible</string>
+	<!-- ZGN  -->
+	<string name="cpu_usage">"Usage"</string>
+	<string name="cpu_freq">"Freq"</string>
+	<string name="cpu_temp">"Temp"</string>
+	<string name="power_temp">"Temp"</string>
+	
+	<string name="notif_memory">"MEM"</string>
+	<string name="notif_cpu">"CPU"</string>
+	<string name="notif_disk">"DISK"</string>
+	<string name="notif_cell">"CELL"</string>
+	
+	<string name="widget_power">CELL</string>
+	<string name="widget_memory">MEM</string>
+	<string name="widget_cpu">CPU</string>
+	<string name="widget_sdcard">DISK</string>
+	<string name="widget_app">APPS</string>
+	<string name="widget_network">NETWORK</string>
+	
+	<string name="uninstall">Uninstall</string>
+	
+	<string name="setting_screen_title_setting">Setting</string>
+	<string name="setting_screen_title_support">Support us</string>
+	<string name="setting_notification_title">Notification bar</string>
+	<string name="setting_notification_on">Show on notification bar</string>
+	<string name="setting_notification_off">Not show on notification bar</string>
+	<string name="setting_adwall_title">APP Recommend</string>
+	<string name="setting_feedback_title">Contact us</string>
+	<string name="setting_set_notification_bar_style">Notification bar style</string>
+	<string name="setting_summary_set_notification_bar_style">Set notification bar style</string>
+	<string name="choose_temp_unit_title">Temperature Unit</string>
+	<string name="choose_temp_unit_dialog_title">Temperature Unit</string>
+	
+	<string name="temperature_unit_celsius">Celsius °C</string>
+	<string name="temperature_unit_fahrenheit">Fahrenheit °F</string>
+	
+    
+    <string name="menu_rating">Rate</string>
+    <!-- Title of rating dialog -->
+    <string name="support_us">Support us</string>
+    <!-- Content of rating dialog -->
+    <string name="support_content">Rate Bonny Box and help it grow better.\n</string>
+    <string name="support_check">Already rated. Do not show it again.</string>
+    
+    
+    <string name="update_title">update</string>
+    <string name="update_app">Update</string>
+    <string name="update_msg">Bonny Box has a new version now, let\'s update it.</string>
+    
+    
+    <!-- menu  -->
+    <string name="menu_contact_us">Contact us</string>
+    <string name="menu_rate_us">Support us</string>
+    <string name="menu_our_app">Our Apps</string>
+    
+    <!-- contact us -->
+    <string name="contactus_email">whitetree.lab@gmail.com</string>
+    <string name="contactus_subject">Bonny BOX Feedback</string>
+    
+    <!-- ZJB  -->
+    <string name="valtage">Voltage</string>
+    <string name="userapps">Apps</string>
+    <string name="storage">Storage</string>
+    <string name="power">Battery</string>
+    <string name="delete">Delete</string>
+    <string name="warn_delete_file">Delete file</string>
+    
+    <string name="rename">Rename</string>
+    <string name="copy">Copy</string>
+    <string name="paste">Paste</string>
+    <string name="move">Move</string>
+    <string name="cut">Cut</string>
+    <string name="new_dir">New Folder</string>
+    <string name="share">Share</string>
+    <string name="open_failed">No supported file format.</string>
+    <string name="system">System</string>
+    <string name="data">Data</string>
+    <string name="mimi">"Can\'t open, no read permissions."</string>
+    
+    <string name="good">Good</string>
+    <string name="overheat">Overheat</string>
+    <string name="overv">Over voltage</string>
+    <string name="dead">Battery exhausted</string>
+    <string name="unknown_error">Unknown Error</string>
+    <string name="ac">Electricity supply by AC</string>
+    <string name="acusb">Electricity supply by AC+USB</string>
+    <string name="usb">Electricity supply by USB</string>
+    <string name="unplugged">Unplugged</string>
+    
+    <string name="widget_title_1">Bonny Box (1X1)</string>
+    <string name="widget_title_2">Bonny Box (2X2)</string>
+    
+	<string name="moomview_choose_dialog_title">Choose style:</string>
+    
+	<string name="desc_func_apps">Installed APPs</string>
+	<string name="desc_func_power">Battery info</string>
+	<string name="desc_func_cpu">CPU info</string>
+	<string name="desc_func_sdcard">Storage info</string>
+	<string name="desc_func_memory">Memory info</string>
+	<string name="desc_func_network">Network info</string>
+	
+	<string name="notif_memory_desc">"Displays the current memory usage"</string>
+	<string name="notif_cpu_desc">"Displays the CPU usage"</string>
+	<string name="notif_disk_desc">"Displays SDCard usage"</string>
+	<string name="notif_cell_desc">"Display battery information"</string>
+	<string name="notif_network_desc">"Displays network traffic information"</string>
+	
+	<string name="desc_func_wifi">WIFI开关啊，亲～</string>
+	<string name="wifi_status_on">ON</string>
+	<string name="wifi_status_off">OFF</string>
+	
+</resources>

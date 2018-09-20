@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	include="moom_cpu_total_usage" >
+
+	<text-board
+		id=":tt"
+		color="red" />
+</moom>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	size="200x200">
+	<text-board
+		id=":tb0"
+		drawRect="%,0.2,0,1,0.4"
+		textSize="30"
+		align="center" />
+
+	<text-board
+		id=":tb1"
+		drawRect="%,0,0,1,0.8"
+		static="false"
+		textSize="60"
+		align="center" />
+
+	<text-board
+		id=":tb2"
+		drawRect="%,0,0.4,1.2,1"
+		static="false"
+		textSize="30"
+		align="center" />
+</moom>

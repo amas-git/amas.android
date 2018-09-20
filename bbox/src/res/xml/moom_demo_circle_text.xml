@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	size="200x200">
+    <arc-stroke
+        margin="1"
+        startAngle="135"
+        sweepAngle="360"
+        strokeWidth="4"
+        color="red"
+        alpha="200" />
+	<circle-label
+		drawRect="%,0,0,1,1"
+		text="192.169.48.132"
+		textSize="30"
+		alpha="255"
+		font="assets:///led.ttf"
+		color="white"/>
+</moom>

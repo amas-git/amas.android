@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	include="moom_base_small"
+	tag=":power"
+	zoom="0.7"
+	name="默认的电池仪表">
+	<arc-stroke
+		id=":as0"
+		color="cyan"
+		alpha="80" />
+
+	<arc-stroke
+		id=":as1"
+		expr="%POW_LP"
+		color="#D2E9FF"
+		alpha="100" />
+
+	<arc-stroke
+		id=":as2"
+		expr="%POW_LP"
+		color="cyan" />
+
+	<text-board
+		id=":tp"
+		expr="%POW_LT"
+		color="cyan" />
+
+	<text-board
+		id=":tt"
+		text="@string/power"
+		color="cyan"
+		alpha="180" />
+	<map
+		key=":power.status">
+		<image
+			tag="charging"
+			margin="10"
+			src="@drawable/charging" />
+	</map>
+</moom>

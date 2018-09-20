@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	include="moom_base_7"
+	size="200x200"
+	name="准备午饭"
+	tag=":cpu"
+    bg="@drawable/dashlight"
+    zoom="0.85">
+	<arc-scale
+		id="1"
+		scaleTextColor="cyan"
+		scaleTextFont="assets:///r2014.ttf"
+		color="cyan" />
+	<arc-stroke
+		id="2"
+		color="green"
+		alpha="150" />
+	<arc-stroke
+		id="3"
+		color="cyan"
+		alpha="150" />
+	<text-board
+		id=":t"
+		margin="%,0,0.5,0,0"
+		color="#F8F8F8"
+		expr="%CPU_UPT"
+		font="assets:///r2014.ttf"
+		text="100%" />
+	<hand
+		id=":h"
+		src="@drawable/pointer"
+		expr="%CPU_UP"
+		color="green"
+		alpha="150" />
+</moom>

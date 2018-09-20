@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	include="moom_base_disk"
+	tag=":fs.extsdcard"
+	name="默认外存">
+	<text-board
+		id=":t"
+		text="@string/extsdcard" />
+	<map
+		key=":status.mounted">
+		<image
+			tag="false"
+			margin="10"
+			src="@drawable/not_avail" />
+	</map>
+</moom>

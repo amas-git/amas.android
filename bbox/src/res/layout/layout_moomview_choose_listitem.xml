@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" 
+    android:background="@drawable/list_item_normal_bg" 
+	android:id="@+id/layout">
+	
+	<lab.whitetree.bonny.box.ui.MoomCellLayout
+		android:id="@+id/moomcelllayout"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+		android:clickable="false"/>
+	
+	<TextView 
+		android:id="@+id/text"
+		android:layout_marginLeft="8dp"
+		android:layout_gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:singleLine="true" 
+        
+        android:textColor="#FFF"
+        android:shadowColor="#000"
+        android:shadowRadius="0.5"
+        android:shadowDx="2"
+        android:shadowDy="2" />
+	
+    
+    <CheckBox 
+        android:id="@+id/select"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:focusable="false"
+        android:layout_marginRight="5dp" 
+        android:button="@drawable/cb_app" />
+</LinearLayout>

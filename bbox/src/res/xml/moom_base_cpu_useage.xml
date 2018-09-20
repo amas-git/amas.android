@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<moom
+	size="60x60">
+
+	<arc-stroke
+		static="true"
+		margin="-5"
+		startAngle="0"
+		sweepAngle="360"
+		strokeWidth="12"
+		color="green"/>
+
+	<arc-stroke
+		static="true"
+		margin="-5"
+		startAngle="0"
+		sweepAngle="360"
+		strokeWidth="10"
+		color="#242424"/>
+
+	<arc-stroke
+		id="3"
+		static="false"
+		margin="-5"
+		startAngle="270"
+		sweepAngle="360"
+		strokeWidth="10"
+		color="green"/>
+
+	<arc-scale
+		margin="-5"
+		startAngle="270"
+		sweepAngle="360"
+		scaleLength="100"
+		mainScaleLineOffset="-15"
+		scaleTextPadding="-15"
+		scaleInterval="36"
+		scaleTextColor="cyan"
+		scaleWidth="6"
+		scaleTextSize="1"
+		color="green"
+		maxScale="10"
+		enableDrawMainScale="false"/>
+
+	<arc-scale
+		margin="-5"
+		startAngle="270"
+		sweepAngle="360"
+		scaleLength="100"
+		mainScaleLineOffset="-15"
+		scaleTextPadding="-15"
+		scaleInterval="36"
+		scaleTextColor="cyan"
+		scaleWidth="4"
+		scaleTextSize="1"
+		maxScale="10"
+		enableDrawMainScale="false"
+		color="#242424" />
+
+	<arc-stroke
+		static="true"
+		margin="-19"
+		startAngle="0"
+		sweepAngle="360"
+		strokeWidth="16"
+		color="#242424"/>
+
+	<arc-stroke
+		static="true"
+		margin="8"
+		startAngle="0"
+		sweepAngle="360"
+		strokeWidth="14"
+		color="#242424"/>
+
+	<text-board
+		drawRect="%,0,0,0.8,0.8"
+		static="true"
+		textSize="16"
+		align="center"
+		color="green"
+		text="CPU" />
+	<text-board
+		id="seq"
+		drawRect="%,0.4,0.3,1,1"
+		static="true"
+		textSize="16"
+		align="right"
+		color="green"
+		text="0" />
+</moom>
